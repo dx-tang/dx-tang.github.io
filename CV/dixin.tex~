@@ -1,0 +1,196 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wilson Resume/CV
+% XeLaTeX Template
+% Version 1.0 (22/1/2015)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Howard Wilson (https://github.com/watsonbox/cv_template_2004) with
+% extensive modifications by Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Default font size
+
+\input{structure.tex} % Include the file specifying document layout
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Dixin Tang} % Print the main header
+
+%------------------------------------------------
+
+\parbox{0.5\textwidth}{ % First block
+\begin{tabbing} % Enables tabbing
+\hspace{2.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Address} \> 1100 E 58th St, Ry177 \\ % Address line 1
+\> Chicago, IL 60637 \\ % Address line 2
+\end{tabbing}}
+\hfill % Horizontal space between the two blocks
+\parbox{0.5\textwidth}{ % Second block
+\begin{tabbing} % Enables tabbing
+\hspace{2.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Homepage} \> \href{http://people.cs.uchicago.edu/~totemtang}{\url{people.cs.uchicago.edu/~totemtang}} \\ 
+{\bf Email} \> totemtang@uchicago.edu \\ % Email address 
+\end{tabbing}}
+\vspace{-10mm}
+%----------------------------------------------------------------------------------------
+%	PERSONAL PROFILE
+%----------------------------------------------------------------------------------------
+
+\section{Research Areas}
+
+Adaptable System, Streaming computing, Transaction processing
+
+\vspace{-5mm}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\tabbedblock{
+    {2015-present} \> PH.D. Candidate in Computer Science - The University of Chicago \\[5pt]
+    \> Advisor: Aaron Elmore \\[5pt]
+    {2011-2014} \> M.S. in Computer Science - Institute of Computing Technology, Chinese Academy of Sciences \\[5pt]
+    \> Advisor: Wei Li \\[5pt]
+    {2007-2011} \> B.S. in Software Engineering - Huazhong University of Science \& Technology 
+}
+
+\vspace{-5mm}
+
+%----------------------------------------------------------------------------------------
+%	AWARD SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Honors \& Awards}
+
+\tabbedblock{
+    {2016} \> University Unrestricted (UU) Fellowship - The University of Chicago \\[5pt]
+    {2016} \> CERES 1st year Graduate Research Award - The University of Chicago
+}
+\vspace{-5mm}
+
+%----------------------------------------------------------------------------------------
+% Research Projects
+%----------------------------------------------------------------------------------------
+\section{Research Projects}
+\project{Adaptive Concurrency Control for Main-memory Database}{Sep. 2015-Nov. 2017}
+{
+We build a main-memory database that supports adaptively mixing multiple forms of concurrency control with minimal overhead. 
+Our system can decompose the workload into partitions and 
+selects a concurrency control protocol for each partition of workload that the protocol is opitmized for, 
+and during workload changes adaptively reconfigure the protocols online.
+}
+
+\project{Structured Data Shuffling for Big Data Analytical Stacks}{Nov. 2013-Jan. 2015}
+{
+We build a structured data shuffling procedure that can leverage the semantics of SQL queries to apply efficient compression algorithms 
+and discard unnecessary data during data shuffling. 
+}
+
+\project{A Fast and Space-efficient Join Method for Log Processing in MapReduce}{Sep. 2012-Nov. 2013}
+{
+We design a join method that achieves high query performance with a small extra storage cost for log processing. 
+It shuffles the log table to avoid huge storage consumption and optimizes the shuffle procedure to achieve high query performance.
+}
+
+\vspace{-5mm}
+%----------------------------------------------------------------------------------------
+%	Publication SECTION
+%----------------------------------------------------------------------------------------
+\section{Publications}
+\pubgroup{
+    \pub{\textbf{Dixin Tang}, Hao Jiang, Aaron J. Elmore:}
+       \> Adaptive Concurrency Control: Despite the Looking Glass, One Concurrency Control Does Not Fit All.\\
+       \> CIDR 2017 \\[5mm]
+
+    \pub{\textbf{Dixin Tang}, Taoying Liu, Rubao Lee, Hong Liu, Wei Li:}
+       \> A Case Study of Optimizing Big Data Analytical Stacks Using Structured Data Shuffling.\\
+       \> BigData Congress 2016: 91-100 \\[5mm]
+
+    \pub{Wenjuan Wang, Taoying Liu, \textbf{Dixin Tang}, Hong Liu, Wei Li, Rubao Lee:}
+       \> SparkArray: An Array-Based Scientific Data Management System Built on Apache Spark.\\
+       \> NAS 2016: 1-10 \\[5mm]
+
+    \pub{\textbf{Dixin Tang}, Taoying Liu, Rubao Lee, Hong Liu, Wei Li}
+       \> A Case Study of Optimizing Big Data Analytical Stacks Using Structured Data Shuffling. \\
+       \> CLUSTER 2015: 70-73 \\[5mm]   
+
+    \pub{\textbf{Dixin Tang}, Taoying Liu, Hong Liu, Wei Li:}
+       \> RHJoin: A Fast and Space-efficient Join Method for Log Processing in MapReduce.\\
+       \> ICPADS 2014: 975-980 \\[5mm]
+
+    \pub{Liang Li, \textbf{Dixin Tang}, Taoying Liu, Hong Liu, Wei Li, Chenzhou Cui:}
+       \> Optimizing the Join Operation on Hive to Accelerate Cross-Matching in Astronomy. \\
+       \> IPDPS Workshops 2014: 1735-1745
+}
+
+\vspace{-5mm}
+%----------------------------------------------------------------------------------------
+%	EMPLOYMENT HISTORY SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Teaching Assistant}
+
+\tabbedblock{
+    {Fall 2015} \> MPCS 51040 - C programming  \\[5pt]
+    {Spring 2016} \> MPCS 52040 - Distributed Systems  \\[5pt]
+    {Winter 2017} \> CMSC 23500 - Introduction to Database  
+}
+\vspace{-5mm}
+
+
+%\job
+%{Sep 2011 -}{Present}
+%{Lehman Brothers, 1234 Mario Park, San Francisco, CA, United States}
+%{http://www.lehmanbrothers.com}
+%{Senior Developer / Technical Team Lead}
+%{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum nec dolor sed sagittis. Cras justo lorem, volutpat mattis lacus vel, consequat aliquam quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.\\
+%\rule{0mm}{5mm}\textbf{Technologies:} Ruby on Rails 2.3, Amazon EC2, NoSQL data stores, memcached, collaborative matching, Facebook Graph API.}
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	REFEREE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Referees}
+
+\parbox{0.5\textwidth}{ % First block
+\begin{tabbing}
+\hspace{1.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Name} \> Aaron Elmore \\ % Referee name
+{\bf Affiliate} \> The University of Chicago \\ % Referee company
+{\bf Position} \> Assistant Professor \\ % Referee job title 
+{\bf Contact} \> aelmore@cs.uchicago.edu % Referee contact information
+\end{tabbing}}
+\hfill % Horizontal space between the two blocks
+\parbox{0.5\textwidth}{ % Second block
+\begin{tabbing}
+\hspace{1.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Name} \> Wei Li\\ % Referee name
+{\bf Affiliate} \> Institute of Computing Technology \\ % Referee company
+{\bf Position} \> Associate Professor \\ % Referee job title 
+{\bf Contact} \> liwei@ict.ac.cn % Referee contact information
+\end{tabbing}} 
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
