@@ -65,7 +65,7 @@ Query Processing, Adaptable Database, Transaction Processing
 \section{Education}
 
 \tabbedblock{
-    {2015-present} \> PH.D. Candidate in Computer Science - The University of Chicago \\[5pt]
+    {2015-present} \> Ph.D. Candidate in Computer Science - The University of Chicago \\[5pt]
     \> Advisor: Aaron Elmore \\[5pt]
     {2011-2014} \> M.S. in Computer Science - Institute of Computing Technology, Chinese Academy of Sciences \\[5pt]
     \> Advisor: Wei Li \\[5pt]
@@ -89,7 +89,17 @@ Query Processing, Adaptable Database, Transaction Processing
 %----------------------------------------------------------------------------------------
 % Research Projects
 %----------------------------------------------------------------------------------------
-\section{Research Projects}
+\section{Research Projects at UChicago}
+\project{Intermittent Query Processing}{Dec. 2017-Present}
+{
+We consider a scenario where queries are executed on incomplete or flawed datasets 
+and the query results will be updated in response to future intermittent deltas. 
+To efficiently process the deltas, 
+we develop a dynamic programming algorithm to determine 
+which intermediate states of the orignal query plan are kept or discarded given a memory constraint. 
+Our initial results on PostgreSQL show that our algorithm has remarkable improvement over greedy solutions. 
+}
+
 \project{Adaptive Concurrency Control for Main-memory Database}{Sep. 2015-Nov. 2017}
 {
 We build a main-memory database that supports adaptively mixing multiple forms of concurrency control with minimal overhead. 
@@ -98,6 +108,7 @@ selects a concurrency control protocol for each partition of workload that the p
 and during workload changes adaptively reconfigure the protocols online.
 }
 
+\section{Earlier Projects}
 \project{Structured Data Shuffling for Big Data Analytical Stacks}{Nov. 2013-Jan. 2015}
 {
 We build a structured data shuffling procedure that can leverage the semantics of SQL queries to apply efficient compression algorithms 
@@ -151,7 +162,8 @@ It shuffles the log table to avoid huge storage consumption and optimizes the sh
 \tabbedblock{
     {Fall 2015} \> MPCS 51040 - C programming  \\[5pt]
     {Spring 2016} \> MPCS 52040 - Distributed Systems  \\[5pt]
-    {Winter 2017} \> CMSC 23500 - Introduction to Database  
+    {Winter 2017} \> CMSC 23500 - Introduction to Database \\[5pt]
+    {Winter 2018} \> CMSC 23500 - Introduction to Database  
 }
 \vspace{-5mm}
 
