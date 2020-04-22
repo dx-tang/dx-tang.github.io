@@ -63,6 +63,7 @@ SmallCapsFeatures = {Letters = SmallCaps}
 \addtolength{\smallertextwidth}{-2cm}
 
 \newcommand{\sqbullet}{~\vrule height 1ex width .8ex depth -.2ex} % Custom square bullet point definition
+\newcommand\emptybullet[1][1.2ex]{\hspace*{#1}}
 
 %----------------------------------------------------------------------------------------
 %	MAIN HEADER COMMAND
@@ -149,6 +150,15 @@ SmallCapsFeatures = {Letters = SmallCaps}
 
 \begin{myindentpar}{1.2cm}
 #3
+\end{myindentpar}
+}
+
+\newcommand{\intern}[5]{
+\sqbullet \tab \textbf{#1} \hspace*{\fill} #2 \\
+\emptybullet \tab Project: #3 \hspace*{\fill} Mentor: #4
+
+\begin{myindentpar}{1.2cm}
+#5
 \end{myindentpar}
 }
 

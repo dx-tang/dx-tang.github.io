@@ -1,0 +1,302 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wilson Resume/CV
+% XeLaTeX Template
+% Version 1.0 (22/1/2015)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Howard Wilson (https://github.com/watsonbox/cv_template_2004) with
+% extensive modifications by Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Default font size
+
+\input{structure.tex} % Include the file specifying document layout
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Dixin Tang} % Print the main header
+
+%------------------------------------------------
+
+\parbox{0.5\textwidth}{ % First block
+\begin{tabbing} % Enables tabbing
+\hspace{2.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Address} \> 5730 S Ellis Ave, JCL 299 \\ % Address line 1
+\> Chicago, IL 60637 \\ % Address line 2
+\end{tabbing}}
+\hfill % Horizontal space between the two blocks
+\parbox{0.5\textwidth}{ % Second block
+\begin{tabbing} % Enables tabbing
+\hspace{2.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Homepage} \> \href{http://people.cs.uchicago.edu/~totemtang}{\url{people.cs.uchicago.edu/~totemtang}} \\ 
+{\bf Email} \> totemtang@uchicago.edu \\ % Email address 
+\end{tabbing}}
+\vspace{-10mm}
+%----------------------------------------------------------------------------------------
+%	PERSONAL PROFILE
+%----------------------------------------------------------------------------------------
+
+\section{Research Areas}
+
+Query Processing, Cloud Database, Transaction Processing
+
+\vspace{-5mm}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\tabbedblock{
+    {2015-present} \> Ph.D. Candidate in Computer Science - The University of Chicago \\[5pt]
+    \> Advisor: Aaron Elmore \\[5pt]
+    {2011-2014} \> M.S. in Computer Science - Institute of Computing Technology, Chinese Academy of Sciences \\[5pt]
+    \> Advisor: Wei Li \\[5pt]
+    {2007-2011} \> B.S. in Software Engineering - Huazhong University of Science \& Technology 
+}
+
+\vspace{-5mm}
+
+%----------------------------------------------------------------------------------------
+%	Publication SECTION
+%----------------------------------------------------------------------------------------
+\section{Publications at UChicago}
+\pubgroup{
+    \pub{\textbf{Dixin Tang}, Zechao Shang, Aaron J. Elmore, Sanjay Krishnan, Michael J. Franklin:}
+       \> Thrifty Query Execution via Incrementability \\
+       \> \textbf{SIGMOD 2020} \\[5mm]
+
+    \pub{Zechao Shang, Xi Liang, \textbf{Dixin Tang}, Cong Ding, Aaron J. Elmore, Sanjay Krishnan, Michael J. Franklin:}
+        \> CrocodileDB: Efficient Database Execution through Intelligent Deferment \\
+        \> \textbf{CIDR 2020} \\[5mm]
+
+
+    \pub{\textbf{Dixin Tang}, Zechao Shang, Aaron J. Elmore, Sanjay Krishnan, Michael J. Franklin:}
+       \> Intermittent Query Processing \\
+       \> \textbf{VLDB 2019} \\[5mm]
+
+    \pub{Panagiotis Antonopoulos, Alex Budovski, Cristian Diaconu, Alejandro Hernandez Saenz, Jack Hu, \\ 
+	 \> Hanuma Kodavalla, Donald Kossmann, Umar Farooq Minhas, Naveen Prakash, Hugh Qu,  \\ 
+	 \> Chaitanya Sreenivas Ravella, Krystyna Reisteter, Sheetal Shroti, \textbf{Dixin Tang}, Vikram Wakade:}
+       \> Socrates: The New SQL Server in the Cloud \\
+       \> \textbf{SIGMOD 2019} \\[5mm]
+
+    \pub{\textbf{Dixin Tang}, Aaron J. Elmore:}
+       \> Toward Coordination-free and Reconfigurable Mixed Concurrency Control. \\
+       \> \textbf{USENIX'ATC 2018} \\[5mm]
+
+    \pub{\textbf{Dixin Tang}, Hao Jiang, Aaron J. Elmore:}
+       \> Adaptive Concurrency Control: Despite the Looking Glass, One Concurrency Control Does Not Fit All.\\
+       \> \textbf{CIDR 2017}
+}
+
+\vspace{-5mm}
+
+
+\section{Earlier Publications}
+\pubgroup{
+    \pub{\textbf{Dixin Tang}, Taoying Liu, Rubao Lee, Hong Liu, Wei Li:}
+       \> A Case Study of Optimizing Big Data Analytical Stacks Using Structured Data Shuffling.\\
+       \> \textbf{BigData Congress 2016} \\[5mm]
+
+    \pub{Wenjuan Wang, Taoying Liu, \textbf{Dixin Tang}, Hong Liu, Wei Li, Rubao Lee:}
+       \> SparkArray: An Array-Based Scientific Data Management System Built on Apache Spark.\\
+       \> \textbf{NAS 2016} \\[5mm]
+
+    \pub{\textbf{Dixin Tang}, Taoying Liu, Rubao Lee, Hong Liu, Wei Li}
+       \> A Case Study of Optimizing Big Data Analytical Stacks Using Structured Data Shuffling. \\
+       \> \textbf{CLUSTER 2015} (Short Paper) \\[5mm]   
+
+    \pub{\textbf{Dixin Tang}, Taoying Liu, Hong Liu, Wei Li:}
+       \> RHJoin: A Fast and Space-efficient Join Method for Log Processing in MapReduce.\\
+       \> \textbf{ICPADS 2014} \\[5mm]
+
+    \pub{Liang Li, \textbf{Dixin Tang}, Taoying Liu, Hong Liu, Wei Li, Chenzhou Cui:}
+       \> Optimizing the Join Operation on Hive to Accelerate Cross-Matching in Astronomy. \\
+       \> \textbf{IPDPS Workshops 2014}
+}
+
+\vspace{-5mm}
+
+\section{Industrial Experience}
+\intern{Internship at Microsoft Research}{June. 2018-Sep. 2018}
+{Benchmarking Socrates}{Umar Farooq Minhas}
+{Socrates is a new cloud-native database that decouples computation from storage. 
+My internship job is to test the new database architecture of Socrates 
+in the industrial setting, understand its performance bottlenecks, 
+and propose optimization opportunities.}
+
+\vspace{-5mm}
+
+%----------------------------------------------------------------------------------------
+% Research Projects
+%----------------------------------------------------------------------------------------
+\section{Research Projects at UChicago}
+
+\project{CrocodileDB: Resource-efficient Database Execution}{July. 2019-Present}
+{CrocodileDB exploits intelligent deferment to achieve low resource consumption 
+and high query performance at the same time. 
+In CrocodileDB, users can trade off between resource consumption and query performance 
+by specifying a maximally allowed time slackness 
+between the data is ready and the corresponding query result is returned. 
+Our system integrates the slackness constraints along with information 
+about new data and query structures into the underlying query optimizer 
+to unlock new resource-efficient query execution plans.}
+
+\project{Incrementability-aware Query Processing}{Mar. 2019-Present}
+{This project studies how to efficiently maintain non-positive standing queries. 
+Incrementally maintaining non-positive queries commonly involves wasted work 
+because tuples output in earlier executions are removed by later executions.  
+We define a metric, \textit{incrementability}, to quantify the cost-effectiveness of incremental executions. 
+To reduce the wasted work of incremental executions, 
+we decompose a query plan into smaller pieces and selectively delay the parts of query with lower levels of incrementability. 
+}
+
+\project{Intermittent Query Processing}{Dec. 2017-Sep. 2019}
+{This project studies how to maintain a standing query 
+over an incomplete data set with the remaining data
+arriving in an intermittent yet predictable way. 
+To process this data arrival pattern, 
+we propose \textit{Intermittent Query Processing}(IQP) 
+that does not keep the query active all the time, but releases some memory resources when there is not data to process. 
+By exploiting the knowledge of incoming data, 
+IQP selectively keeps a subset of intermediate states when the query is inactive. 
+Therefore, with limited memory consumption IQP can achieve low latency of updating query results for new data.  
+}
+
+\project{Adaptive Concurrency Control for Main-memory Database}{Sep. 2015-Nov. 2017}
+{
+We build a main-memory database that supports adaptively mixing multiple forms of concurrency control with minimal overhead. 
+Our system can decompose the workload into partitions and 
+selects a concurrency control protocol for each partition of workload that the protocol is optimized for, 
+and during workload changes adaptively reconfigure the protocols online.
+}
+
+\section{Earlier Projects}
+\project{Structured Data Shuffling for Big Data Analytical Stacks}{Nov. 2013-Jan. 2015}
+{
+We build a structured data shuffling procedure that can leverage the semantics of SQL queries to apply efficient compression algorithms 
+and discard unnecessary data during data shuffling. 
+}
+
+\project{A Fast and Space-efficient Join Method for Log Processing in MapReduce}{Sep. 2012-Nov. 2013}
+{
+We design a join method that achieves high query performance with a small extra storage cost for log processing. 
+It shuffles the log table to avoid huge storage consumption and optimizes the shuffle procedure to achieve high query performance.
+}
+
+\vspace{-5mm}
+
+%----------------------------------------------------------------------------------------
+%	AWARD SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Honors \& Awards}
+
+\tabbedblock{
+    {2018} \> USENIX ATC'18 Student Travel Grant \\[5pt]
+    {2016} \> University Unrestricted (UU) Fellowship - The University of Chicago \\[5pt]
+    {2016} \> CERES 1st year Graduate Research Award - The University of Chicago
+}
+\vspace{-5mm}
+
+
+%----------------------------------------------------------------------------------------
+%	EMPLOYMENT HISTORY SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Teaching Assistant}
+
+\tabbedblock{
+    {Fall 2015} \> MPCS 51040 - C programming  \\[5pt]
+    {Spring 2016} \> MPCS 52040 - Distributed Systems  \\[5pt]
+    {Winter 2017} \> CMSC 23500 - Introduction to Database \\[5pt]
+    {Winter 2018} \> CMSC 23500 - Introduction to Database  \\[5pt]
+    {Winter 2019} \> CMSC 23500 - Introduction to Database  \\[5pt]
+    {Winter 2020} \> CMSC 23500 - Introduction to Database  
+}
+\vspace{-5mm}
+
+%\job
+%{Sep 2011 -}{Present}
+%{Lehman Brothers, 1234 Mario Park, San Francisco, CA, United States}
+%{http://www.lehmanbrothers.com}
+%{Senior Developer / Technical Team Lead}
+%{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum nec dolor sed sagittis. Cras justo lorem, volutpat mattis lacus vel, consequat aliquam quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.\\
+%\rule{0mm}{5mm}\textbf{Technologies:} Ruby on Rails 2.3, Amazon EC2, NoSQL data stores, memcached, collaborative matching, Facebook Graph API.}
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	REFEREE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Referees}
+
+\parbox{0.5\textwidth}{ % First block
+\begin{tabbing}
+\hspace{1.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Name} \> Aaron Elmore \\ % Referee name
+{\bf Affiliate} \> University of Chicago \\ % Referee company
+{\bf Position} \> Assistant Professor \\ % Referee job title 
+{\bf Contact} \> aelmore@cs.uchicago.edu % Referee contact information
+\end{tabbing}}
+\\
+\parbox{0.5\textwidth}{ % Second block
+\begin{tabbing}
+\hspace{1.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Name} \> Michael Franklin \\ % Referee name
+{\bf Affiliate} \> University of Chicago \\ % Referee company
+{\bf Position} \> Liew Family Chairman of Computer Science \\ % Referee job title 
+{\bf Contact} \> mjfranklin@uchicago.edu % Referee contact information
+\end{tabbing}}
+\\
+\parbox{0.5\textwidth}{ % First block
+\begin{tabbing}
+\hspace{1.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Name} \> Sanjay Krishnan \\ % Referee name
+{\bf Affiliate} \> University of Chicago \\ % Referee company
+{\bf Position} \> Assistant Professor \\ % Referee job title 
+{\bf Contact} \> skr@cs.uchicago.edu % Referee contact information
+\end{tabbing}}
+\\
+\parbox{0.5\textwidth}{ % Second block
+\begin{tabbing}
+\hspace{1.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Name} \> Umar Farooq Minhas \\ % Referee name
+{\bf Affiliate} \> Microsoft Research \\ % Referee company
+{\bf Position} \> Principle Researcher \\ % Referee job title 
+{\bf Contact} \> ufminhas@microsoft.com % Referee contact information
+\end{tabbing}}
+\\
+\parbox{0.5\textwidth}{ % First block
+\begin{tabbing}
+\hspace{1.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Name} \> Wei Li\\ % Referee name
+{\bf Affiliate} \> Institute of Computing Technology \\ % Referee company
+{\bf Position} \> Associate Professor \\ % Referee job title 
+{\bf Contact} \> liwei@ict.ac.cn % Referee contact information
+\end{tabbing}}
+\hfill
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

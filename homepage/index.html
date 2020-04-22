@@ -1,237 +1,132 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Dixin's HomePage</title>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <title>Dixin's Homepage</title>
+        
+        <link href="icon.jpg" rel=icon>
 
-    <!-- favicon -->
-    <link href="icon.jpg" rel=icon>
+        <!-- Bootstrap Core CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- web-fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+        <style> 
+            .container-fluid {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 64em;
+                margin-top: 20px;
+            }
+        </style>
 
-    <!-- font-awesome -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- owl carousal -->
-    <link href="css/owl.carousel.css" rel="stylesheet">
-
-    <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-<div id="main-wrapper">
-<!-- Page Preloader -->
-<div id="preloader">
-    <div id="status">
-        <div class="status-mes"></div>
-    </div>
-</div>
-
-<header class="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="profile-img">
-                    <img src="img/img-profile.jpg" class="img-responsive" alt=""/>
-                </div>
-                <!-- Profile Image -->
-            </div>
-            <div class="col-md-9">
-                <div class="name-wrapper">
-                    <h1 class="name">Dixin Tang (<a href="CV/dixin-cv.pdf">CV</a>)</h1>
-                    <span>The University of Chicago</span>
-                </div>
-                <p style="text-align:justify">
-                    I am a third-year PhD candidate at UChicago working with <a href="http://people.cs.uchicago.edu/~aelmore/">Prof. Aaron Elmore</a>. 
-					My current research interest includes query processing, adaptable database, and transaction processing. 
-                </p>
-
-
-                <div class="row">
-                    <div class="col-md-3">
-                        <address>
-                            <strong>Address</strong><br>
-                            1100 E 58th St, Ry177<br>
-                            Chicago, IL 60637
-                        </address>
-                    </div>
-
-                    <div class="col-md-3">
-                        <address>
-                            <strong>Email</strong><br>
-                            <a href="mailto:#">totemtang@uchicago.edu</a>
-                        </address>
-                    </div>
-
-                </div>
-
-
-                <!--ul class="social-icon">
-                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-slack" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                </ul-->
-            </div>
-        </div>
-    </div>
-</header>
-<!-- .header-->
-
-<section class="section-education section-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="section-title"><h2>Education</h2></div>
-            </div>
-
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-12">
-						<div class="content-item">
-        		            <small>2015 - Present</small>
-        		            <h3>Ph.D. Candidate in Computer Science</h3>
-        		            <h4>The University of Chicago</h4>
-        		        </div>
-
-		                <div class="content-item">
-                		    <small>2011 - 2014</small>
-        		            <h3>M.S. in Computer Science</h3>
-        		            <h4>Institute of Computing Technology, Chinese Academy of Sciences</h4>
-        		        </div>
-
-                		<div class="content-item">
-                    		<small>2007 - 2011</small>
-                    		<h3>B.S. in Software Engineering</h3>
-		                    <h4>Huazhong University of Science & Technology</h4>
-                		</div>
-
-            		</div>
-                </div>
-                <!--.row-->
-            </div>
-
-        </div>
-        <!--.row-->
-    </div>
-    <!-- .container -->
-</section>
-<!-- .section-education -->
-
-
-<section class="section-publication section-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="section-title"><h2>Publications (<a href="https://dblp.uni-trier.de/pers/hd/t/Tang:Dixin">DBLP</a>)</h2></div>
-            </div>
-
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-12">
-						<div class="content-item">
-							<li><b>Dixin Tang</b>, Aaron J. Elmore:
-							<br><a href="https://www.usenix.org/conference/atc18/presentation/tang" target="_blank"><cite>Toward Coordination-free and Reconfigurable Mixed Concurrency Control.</cite></a>
-							<br>USENIX Annual Technical Conference 2018: 809-822 
-							(<a href="https://www.youtube.com/watch?v=ypkbL_gatoo">Video</a>, 
-							 <a href="paper/CormCC-poster.pdf">Poster</a>,
-							 <a href="https://newtraell.cs.uchicago.edu/files/tr_authentic/TR-2018-06.pdf">Technical Report</a>)
-							</li>
-        		        </div>
-            		</div>
-                </div>
-                <!--.row-->
-                <div class="row">
-                    <div class="col-md-12">
-						<div class="content-item">
-							<li><b>Dixin Tang</b>, Hao Jiang, and Aaron J. Elmore:
-							<br><a href="http://cidrdb.org/cidr2017/papers/p63-tang-cidr17.pdf" target="_blank"><cite>Adaptive Concurrency Control: Despite the Looking Glass, One Concurrency Control Does Not Fit All.</cite></a>
-							<br>CIDR 2017 (<a href="http://istc-bigdata.org/index.php/solving-the-one-concurrency-control-does-not-fit-all-problem-for-oltp-databases/">Blog</a>)
-							</li>
-        		        </div>
-            		</div>
-                </div>
-                <!--.row-->
-            </div>
-
-        </div>
-        <!--.row-->
-    </div>
-    <!-- .container -->
-</section>
-<!-- .section-publication -->
-
-
-<section class="section-award section-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="section-title"><h2>Honors & Awards</h2></div>
-            </div>
-
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-12">
-						<div class="content-item">
-                            <li> USENIX ATC'18 Student Travel Grant </li>
-							<li> University Unrestricted (UU) Fellowship (UChicago, 2016) </li>
-							<li> <a href="https://ceres.cs.uchicago.edu/">CERES</a> 1st year Graduate Research Award (UChicago, 2016) </li>
-        		        </div>
-            		</div>
-                </div>
-                <!--.row-->
-            </div>
-
-        </div>
-        <!--.row-->
-    </div>
-    <!-- .container -->
-</section>
-<!-- .section-award -->
-
-
-<footer class="footer">
-    <div class="copyright-section">
-        <div class="container">
+        <link href="css/customize.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid normal-font">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="copytext">&copy; MyProfile, All rights reserved | Design By: <a
-                            href="https://themehippo.com">themehippo</a></div>
+                <div class="col-md-4">
+                    <div class="center-block">
+                        <img src="img/img-profile.jpg" height="220px">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row"><div class="col-md-8 name-font">
+                            Dixin Tang (<a href="CV/cv_tang.pdf">CV</a>)
+                    </div></div>
+                    <div class="row"><div class="col-md-8 university-font">
+                        University of Chicago
+                    </div></div>
+                    <div class="row contact-font" style="margin-top: 15px">
+                    <div class="col-md-5">
+                        Address:<br>
+                        5730 S Ellis Ave, JCL 299<br>
+                        Chicago, IL 60637<br>
+                    </div>
+                    <div class="col-md-7">
+                        Email:<br>
+                        totemtang [at] uchicago [dot] edu<br>
+                    </div>
+                    </div>
                 </div>
             </div>
-            <!--.row-->
+
+            <div class="row" style="margin-top: 20px">
+                <div class="col-md-12">
+                    <p class="header-font">About</p>
+                    I am a PhD candidate in the database group of UChicago. 
+                    My advisor is <a href="http://people.cs.uchicago.edu/~aelmore/">Prof. Aaron Elmore</a>. 
+                    I also work with <a href="http://people.cs.uchicago.edu/~skr">Prof. Sanjay Krishnan</a> 
+                    and <a href="https://computerscience.uchicago.edu/people/profile/michael-franklin/">Prof. Michael Franklin</a>.
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px">
+                <div class="col-md-12">
+                    <p class="header-font">Research Interest</p>
+                    <p class="text-justify">
+                    My research interest includes designing resource-efficient query processing methods on dynamic datasets, 
+                    providing query service in the cloud, and high-performance transaction processing on multicore machines.
+                    I am currently working on CrocodileDB, a new database architecture that exploits time slackness 
+                    to enable new resource-efficient query execution plans.  
+                    Please check out our <a href="http://cidrdb.org/cidr2020/papers/p14-shang-cidr20.pdf" target="_blank" >vision paper</a> for more information. </p>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 10px">
+                <div class="col-md-12">
+                <p class="header-font">Publications</p>
+                <ul>
+                    <li>
+                        <a href="http://people.cs.uchicago.edu/~totemtang/" target="_blank">Thrifty Query Execution via Incrementability</a><br>
+                        <b>Dixin Tang</b>, Zechao Shang, Aaron J. Elmore, Sanjay Krishnan, Michael J. Franklin
+                        <br><b>SIGMOD 2020</b>
+					</li>
+                    <li class="item-margin">
+                        <a href="http://cidrdb.org/cidr2020/papers/p14-shang-cidr20.pdf" target="_blank">
+                            CrocodileDB: Efficient Database Execution through Intelligent Deferment</a><br>
+                        Zechao Shang, Xi Liang, <b>Dixin Tang</b>, Ding Cong, Aaron J. Elmore, Sanjay Krishnan, Michael J. Franklin
+                        <br><b>CIDR 2020</b>
+					</li>
+                    <li class="item-margin">
+                        <a href="http://www.vldb.org/pvldb/vol12/p1427-tang.pdf" target="_blank">Intermittent Query Processing</a><br>
+                        <b>Dixin Tang</b>, Zechao Shang, Aaron J. Elmore, Sanjay Krishnan, Michael J. Franklin
+                        <br><b>VLDB 2019</b>
+					</li>
+                    <li class="item-margin">
+                        <a href="https://www.microsoft.com/en-us/research/uploads/prod/2019/05/socrates.pdf" target="_blank">
+                            Socrates: The New SQL Server in the Cloud</a><br>
+                        Panagiotis Antonopoulos, Alex Budovski, Cristian Diaconu, Alejandro Hernandez Saenz, Jack Hu, Hanuma Kodavalla, 
+                        Donald Kossmann, Sandeep Lingam, Umar Farooq Minhas, Naveen Prakash, Vijendra Purohit, Hugh Qu, 
+                        Chaitanya Sreenivas Ravella, Krystyna Reisteter, Sheetal Shrotri, <b>Dixin Tang</b>, Vikram Wakade <br>
+                        <b>SIGMOD 2019</b>
+					</li>
+                    <li class="item-margin">
+                        <a href="https://www.usenix.org/conference/atc18/presentation/tang" target="_blank">
+                            Toward Coordination-free and Reconfigurable Mixed Concurrency Control</a><br>
+                        <b>Dixin Tang</b>, Aaron J. Elmore<br>
+                        <b>USENIX'ATC 2018</b>
+                        (<a href="https://www.youtube.com/watch?v=ypkbL_gatoo">Video</a>, 
+						 <a href="https://newtraell.cs.uchicago.edu/files/tr_authentic/TR-2018-06.pdf">Technical Report</a>)
+					</li>
+                    <li class="item-margin">
+                        <a href="http://cidrdb.org/cidr2017/papers/p63-tang-cidr17.pdf" target="_blank">
+                            Adaptive Concurrency Control: Despite the Looking Glass, One Concurrency Control Does Not Fit All</a><br>
+                        <b>Dixin Tang</b>, Hao Jiang, and Aaron J. Elmore<br>
+                        <b>CIDR 2017</b>
+                        (<a href="http://istc-bigdata.org/index.php/solving-the-one-concurrency-control-does-not-fit-all-problem-for-oltp-databases/">Blog</a>)
+					</li>
+                </ul>
+                </div>
+            </div>
+
         </div>
-        <!-- .container-fluid -->
-    </div>
-    <!-- .copyright-section -->
-</footer>
-<!-- .footer -->
 
-</div>
-<!-- #main-wrapper -->
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 
-<!-- jquery -->
-<script src="js/jquery-2.1.4.min.js"></script>
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
-<!--owl carousal-->
-<script src="js/owl.carousel.min.js"></script>
-<!--theme script-->
-<script src="js/scripts.js"></script>
-</body>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
 </html>
+

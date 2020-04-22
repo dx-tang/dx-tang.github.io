@@ -1,6 +1,6 @@
 #!/bin/bash
 
-xelatex dixin.tex
-rm dixin.log
-rm dixin.out
-rm dixin.aux
+xelatex cv_tang.tex
+rm cv_tang.log
+rm cv_tang.out
+rm cv_tang.aux
