@@ -23,6 +23,15 @@
 
 \input{structure.tex} % Include the file specifying document layout
 
+\usepackage{xspace}
+
+\newcommand{\db}{CrocodileDB\xspace}
+\newcommand{\pg}{PostgreSQL\xspace}
+\newcommand{\inqp}{InQP\xspace}
+\newcommand{\iqp}{IQP\xspace}
+\newcommand{\incability}{incrementability\xspace}
+\newcommand{\Incability}{Incrementability\xspace}
+
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -65,7 +74,7 @@ Query Processing/Optimization, Cloud Database, Transaction Processing
 \section{Education}
 
 \tabbedblock{
-    {2015-present} \> Ph.D. Candidate in Computer Science - The University of Chicago \\[5pt]
+    {2015-present} \> Ph.D. Candidate in Computer Science - University of Chicago \\[5pt]
     \> Advisor: Aaron Elmore \\[5pt]
     {2011-2014} \> M.S. in Computer Science - Institute of Computing Technology, Chinese Academy of Sciences \\[5pt]
     \> Advisor: Wei Li \\[5pt]
@@ -77,17 +86,17 @@ Query Processing/Optimization, Cloud Database, Transaction Processing
 %----------------------------------------------------------------------------------------
 %	Publication SECTION
 %----------------------------------------------------------------------------------------
-\section{Publications at UChicago}
+\section{Publications at \textcolor{maroon}{UChicago}}
 \pubgroup{
-    \pub{CrocodileDB in Action: Resource-Efficient Query Execution by Exploiting Time Slackness}
+    \pub{\db in Action: Resource-Efficient Query Execution by Exploiting Time Slackness}
        \> \textbf{Dixin Tang}, Zechao Shang, Aaron J. Elmore, Sanjay Krishnan, Michael J. Franklin \\
        \> \textbf{VLDB 2020, Demo} \\[5mm]
 
-    \pub{Thrifty Query Execution via Incrementability}
+    \pub{Thrifty Query Execution via \Incability}
        \> \textbf{Dixin Tang}, Zechao Shang, Aaron J. Elmore, Sanjay Krishnan, Michael J. Franklin \\
        \> \textbf{SIGMOD 2020} \\[5mm]
 
-    \pub{CrocodileDB: Efficient Database Execution through Intelligent Deferment}
+    \pub{\db: Efficient Database Execution through Intelligent Deferment}
     \> Zechao Shang, Xi Liang, \textbf{Dixin Tang}, Cong Ding, Aaron J. Elmore, Sanjay Krishnan, Michael J. Franklin \\
     \> \textbf{CIDR 2020} \\[5mm]
 
@@ -150,100 +159,140 @@ and propose optimization opportunities.}
 \vspace{-5mm}
 
 %----------------------------------------------------------------------------------------
-% Research Projects
-%----------------------------------------------------------------------------------------
-\section{Research Projects at UChicago}
-
-\project{CrocodileDB: Resource-efficient Database Execution}{July 2019-Present}
-{CrocodileDB is a new database for processing dynamic datasets (e.g. streaming tuples). 
-It exploits intelligent deferment to achieve low resource consumption 
-and high query performance at the same time. 
-In CrocodileDB, users can trade-off between resource consumption and query performance 
-by specifying a maximally allowed time slackness 
-between the data is ready and the corresponding query result is returned. 
-Our system integrates the slackness constraints along with information 
-about new data and query structures into the underlying query optimizer 
-to unlock new resource-efficient query execution plans.}
-
-\project{Incrementability-aware Query Processing}{Mar. 2019-Present}
-{This project studies how to efficiently maintain non-positive standing queries. 
-While incremental executions can reduce query latency, it increases total query work (i.e. CPU cycles) 
-when we eagerly maintain non-positive queries 
-because output tuples in earlier executions are repeatedly removed by later executions. 
-To reduce the total work of incremental executions without sacrificing query latency, 
-we selectively defer some parts of a query that are less amenable to incremental execution. 
-To enable this optimization, we define a metric, \textit{incrementability} that 
-quantifies the cost-effectiveness of incremental executions. 
-Our system can leverage this metric to decide how eagerly and lazily we should execute different parts of a query.}
-
-\project{Intermittent Query Processing}{Dec. 2017-Sep. 2019}
-{This project studies how to maintain a standing query 
-over an incomplete data set with the remaining data
-arriving in an intermittent yet predictable way. 
-To process this data arrival pattern, 
-we propose \textit{Intermittent Query Processing}(IQP) 
-that does not keep the query active all the time but releases some memory resources when there is no data to process. 
-By exploiting the knowledge of incoming data, 
-IQP selectively keeps a subset of intermediate states when the query is inactive. 
-Therefore, with limited memory consumption IQP can achieve low latency of updating query results for new data.}
-
-\project{Adaptive Concurrency Control for Main-memory Database}{Sep. 2015-Nov. 2017}
-{
-We build a main-memory database that supports adaptively mixing multiple forms of concurrency control with minimal overhead. 
-Our system can decompose the workload into partitions and 
-selects a concurrency control protocol for each partition of workload that the protocol is optimized for, 
-and during workload changes adaptively reconfigure the protocols online.
-}
-
-\section{Earlier Projects}
-\project{Structured Data Shuffling for Big Data Analytical Stacks}{Nov. 2013-Jan. 2015}
-{
-We build a structured data shuffling procedure that can leverage the semantics of SQL queries to apply efficient compression algorithms 
-and discard unnecessary data during data shuffling. 
-}
-
-\project{A Fast and Space-efficient Join Method for Log Processing in MapReduce}{Sep. 2012-Nov. 2013}
-{
-We design a join method that achieves high query performance with a small extra storage cost for log processing. 
-It shuffles the log table to avoid huge storage consumption and optimizes the shuffle procedure to achieve high query performance.
-}
-
-\vspace{-5mm}
-
-%----------------------------------------------------------------------------------------
 %	SYSTEM BUILDING EXPERIENCE
 %----------------------------------------------------------------------------------------
 
 \section{System Building Experience}
 
 \system{Multi-Query Optimization in SparkSQL}
-{We extend SparkSQL to support multi-query optimization for all TPC-H queries. 
-Our framework takes Dataframe queries as input and generates a query plan 
+{I extend SparkSQL to support multi-query optimization for the full TPC-H test suite. 
+The framework takes Dataframe queries as input and generates a query plan 
 that shares the execution of all submitted queries. 
-We enhance each intermediate tuple during query execution to 
+I enhance each intermediate tuple during query execution to 
 additionally include the query IDs that the tuple is valid to 
-and modify the SparkSQL operator to leverage this information 
+and modify SparkSQL operators to leverage this information 
 to support shared query execution.}
 
 \system{Complex Materialized View Maintenance in SparkSQL}
-{We extend SparkSQL to support maintaining materialized views with deletes and updates.
-Our system supports complex materialized views that are beyond select-project-join-aggregate queries. 
-Specifically, the operators our system supports include select, project, aggregate, sort, materialize, distinct, 
-and all kinds of joins (inner, outer, and anti join) and there is no ordering limit about these operators.}
+{I extend SparkSQL to support maintaining materialized views with deletes and updates.
+The system supports complex materialized views that are beyond select-project-join-aggregate queries. 
+Specifically, the supported operators include select, project, aggregate, sort, materialize, distinct, 
+and joins (inner, outer, and anti join), and there is no ordering limit about these operators.}
 
-\system{Intermediate State Management in PostgreSQL}
-{We extend PostgreSQL to support materialized view maintenance with intermediate state management. 
-Our modified PostgreSQL can selectively discard some intermediate states to save memory resources. 
-When a discarded state is required to process new data, we can rebuild this state from saved intermediate states 
+\system{Intermediate State Management in \pg}
+{I extend \pg to support materialized view maintenance with intermediate state management. 
+The modified \pg can selectively discard some intermediate states to save memory resources. 
+When a discarded state is required to process new data, the system can rebuild this state from saved intermediate states 
 to quickly update the materialized view.
 }
 
 \system{Adaptive Concurrency Control in Main-Memory Database}
-{We develop a key-value main-memory database which hosts several concurrency control protocols 
+{I develop a key-value main-memory database which hosts several concurrency control protocols 
 including partition-based concurrency control, two-phase locking, and optimistic concurrency control protocols. 
-Our database uses a machine learning model to adaptively apply a protocol to a partition of the database 
+The database uses a machine learning model to adaptively apply a protocol to a partition of the database 
 and reconfigures protocols in response to workload changes.}
 
+
+\vspace{-5mm}
+
+\section{Mentoring Experience}
+
+\mentor{Cong Ding, Undergraduate}{July 2019-Present}
+{I mentor Cong Ding on client-assisted data loading project, 
+which exploits partial data loading to make data quickly available, but not heavily sacrifice query performance. 
+The research paper is under preparation.}
+
+\vspace{-5mm}
+
+%----------------------------------------------------------------------------------------
+% Research Projects
+%----------------------------------------------------------------------------------------
+\section{Research Projects at \textcolor{maroon}{UChicago}}
+
+\project{\Incability-aware Shared Query Execution}{Mar. 2020-Present}
+{This project studies shared execution across standing queries that access the same data, 
+but have different performance requirements. 
+Shared execution eliminates redundant work across queries to reduce computing resources. 
+However, the shared plan needs to meet the highest performance requirement (i.e. the lowest query latency), 
+which forces some participating standing queries to run more eagerly. 
+Eager incremental executions 
+increase total work which may offset the benefits of shared execution. 
+This project considers the two factors together 
+and finds efficient query plans that 
+reduce redundant work across concurrent queries and also avoid the cost of eager incremental executions. 
+}
+
+\project{Client-assisted Data Loading (mentoring project)}{July 2019-Present}
+{Data loading is a time-consuming process. 
+I mentor an undergraduate student to study 
+lazily loading data to make data available earlier, but not heavily sacrifice query performance. 
+I advise the student to redesign the data loading process 
+by actively pushing predicates of prospective queries into 
+the clients (e.g. edge devices) 
+to generate bit-vectors that indicate whether a tuple 
+is valid for a predicate. 
+These bit vectors are used to partially load data that is most frequently accessed by prospective queries. 
+When queries access unloaded data, the system uses the bit-vectors as an index to accelerate the query execution 
+by skipping irrelevant tuples.
+}
+
+\project{\db: Resource-efficient Database Execution}{July 2019-Present}
+{\db is a new database for processing dynamic datasets (e.g. streaming tuples). 
+It exploits intelligent deferment to achieve low resource consumption 
+and high query performance at the same time. 
+In \db, users can trade-off between resource consumption and query performance 
+by specifying a maximally allowed time slackness 
+between the data is ready and the corresponding query result is available to users. 
+Our system integrates the slackness constraints along with information 
+about new data and query structures into the query optimizer 
+to unlock new resource-efficient query execution plans.}
+
+\project{\Incability-aware Query Processing}{Mar. 2019-June 2020}
+{This project studies how to efficiently maintain non-positive standing queries. 
+While starting a query early and incrementally maintain the query result 
+can reduce the query latency, it increases total query work (i.e. CPU cycles), 
+especially when the database eagerly maintains non-positive queries, 
+because output tuples in earlier executions may be removed by later executions. 
+Observing that incremental executions for different parts of a query 
+increase different amounts of total work for the same reduced latency, 
+I define a metric, \textit{\incability} to quantify the cost-effectiveness of incremental executions. 
+Our system leverages this metric to decide the execution frequencies of different parts of a query, 
+which is optimized to reduce total query work and also achieve low query latency.}
+
+\project{Intermittent Query Processing}{Dec. 2017-Sep. 2019}
+{This project studies how to maintain a standing query 
+over an incomplete data set with the remaining data
+arriving in an intermittent, yet predictable way. 
+To process this data arrival pattern, 
+we propose \textit{Intermittent Query Processing}(\iqp) 
+that does not keep the query active all the time but releases some memory resources when there is no data to process. 
+When the query has no data to process, 
+\iqp leverages the information about incoming data to 
+selectively keeps a subset of intermediate states that are most useful 
+for processing new data within a memory budget. 
+Therefore, \iqp achieves low latency of updating query results with limited memory consumption.}
+
+\project{Adaptive Concurrency Control for Main-memory Database}{Sep. 2015-Nov. 2017}
+{I build a main-memory database that supports adaptively mixing multiple forms of concurrency control with minimal overhead. 
+This system decomposes the workload into partitions and 
+selects a concurrency control protocol for each partition of workload that the protocol is optimized for, 
+and during workload changes adaptively reconfigures the protocols online. 
+The experiments show that this approach has a higher throughput than the single best protocol under workload changes.}
+
+\section{Earlier Projects}
+\project{Structured Data Shuffling for Big Data Analytical Stacks}{Nov. 2013-Jan. 2015}
+{
+I build a structured data shuffling procedure that can leverage the semantics of SQL queries to apply efficient compression algorithms 
+and discard unnecessary data during data shuffling. 
+}
+
+\project{A Fast and Space-efficient Join Method for Log Processing in MapReduce}{Sep. 2012-Nov. 2013}
+{
+I design a join method that achieves high query performance with a small extra storage cost for log processing. 
+It shuffles the log table to avoid huge storage consumption and optimizes the shuffle procedure to achieve high query performance.
+}
+
+\vspace{-5mm}
 
 %----------------------------------------------------------------------------------------
 %	AWARD SECTION

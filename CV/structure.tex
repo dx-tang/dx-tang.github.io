@@ -41,6 +41,7 @@ SmallCapsFeatures = {Letters = SmallCaps}
 
 \usepackage{color} % Required for custom colors
 \definecolor{slateblue}{rgb}{0.17,0.22,0.34}
+\definecolor{maroon}{RGB}{128,0,0}
 
 \usepackage{sectsty} % Allows customization of titles
 \sectionfont{\color{slateblue}} % Color section titles
@@ -64,6 +65,7 @@ SmallCapsFeatures = {Letters = SmallCaps}
 
 \newcommand{\sqbullet}{~\vrule height 1ex width .8ex depth -.2ex} % Custom square bullet point definition
 \newcommand\emptybullet[1][1.2ex]{\hspace*{#1}}
+
 
 %----------------------------------------------------------------------------------------
 %	MAIN HEADER COMMAND
@@ -145,9 +147,19 @@ SmallCapsFeatures = {Letters = SmallCaps}
   {\end{list}
 }
 
+\newcommand{\mentor}[3]{
+\sqbullet \tab \textbf{#1} \hspace*{\fill} #2 \\
+
+\vspace{-6mm}
+\begin{myindentpar}{1.2cm}
+#3
+\end{myindentpar}
+}
+
 \newcommand{\project}[3]{
 \sqbullet \tab \textbf{#1} \hspace*{\fill} #2
 
+\vspace{-2mm}
 \begin{myindentpar}{1.2cm}
 #3
 \end{myindentpar}
@@ -155,6 +167,8 @@ SmallCapsFeatures = {Letters = SmallCaps}
 
 \newcommand{\system}[2]{
 \sqbullet \tab \textbf{#1}
+
+\vspace{-2mm}
 \begin{myindentpar}{1.2cm}
 #2
 \end{myindentpar}
@@ -164,6 +178,7 @@ SmallCapsFeatures = {Letters = SmallCaps}
 \sqbullet \tab \textbf{#1} \hspace*{\fill} #2 \\
 \emptybullet \tab Project: #3 \hspace*{\fill} Mentor: #4
 
+\vspace{-2mm}
 \begin{myindentpar}{1.2cm}
 #5
 \end{myindentpar}
