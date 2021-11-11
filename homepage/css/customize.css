@@ -2,9 +2,14 @@
     font-size: 4.5rem;
 }
 
-.university-font {
+.chicago-font {
     font-size: 3.2rem;
     color: #800000
+}
+
+.berkeley-font {
+    font-size: 3.0rem;
+    color: #C4820E
 }
 
 .contact-font {

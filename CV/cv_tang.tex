@@ -40,23 +40,22 @@
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title{Dixin Tang} % Print the main header
+\title{Dixin Tang {\small (totemtang@berkeley.edu)}} % Print the main header
 
 %------------------------------------------------
-
-\parbox{0.5\textwidth}{ % First block
-\begin{tabbing} % Enables tabbing
-\hspace{2.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
-{\bf Address} \> 5730 S Ellis Ave, JCL 299 \\ % Address line 1
-\> Chicago, IL 60637 \\ % Address line 2
-\end{tabbing}}
-\hfill % Horizontal space between the two blocks
-\parbox{0.5\textwidth}{ % Second block
-\begin{tabbing} % Enables tabbing
-\hspace{2.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
-{\bf Homepage} \> \href{http://people.cs.uchicago.edu/~totemtang}{\url{people.cs.uchicago.edu/~totemtang}} \\ 
-{\bf Email} \> totemtang@uchicago.edu \\ % Email address 
-\end{tabbing}}
+%
+%\parbox{0.5\textwidth}{ % First block
+%\begin{tabbing} % Enables tabbing
+%\hspace{2.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
+%{\bf Email} \> totemtang@berkeley.edu \\ % Address line 1
+%\end{tabbing}}
+%\hfill % Horizontal space between the two blocks
+%\parbox{0.5\textwidth}{ % Second block
+%\begin{tabbing} % Enables tabbing
+%\hspace{2.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
+%{\bf Address} \> Work from home 
+%%{\bf Email} \> totemtang@berkeley.edu \\ % Email address 
+%\end{tabbing}}
 \vspace{-10mm}
 %----------------------------------------------------------------------------------------
 %	PERSONAL PROFILE
@@ -64,9 +63,19 @@
 
 \section{Research Areas}
 
-Query Processing/Optimization, Cloud Database, Transaction Processing
+Interactive Data Analysis, Query Processing/Optimization, Cloud Database, Transaction Processing
 
 \vspace{-5mm}
+
+\section{Employment}
+
+\tabbedblock{
+    {2021-present} \> Postdoc Researcher - University of California, Berkeley \\[5pt]
+    \> Advisor: Aditya G. Parameswaran
+}
+
+\vspace{-7mm}
+
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
@@ -74,8 +83,8 @@ Query Processing/Optimization, Cloud Database, Transaction Processing
 \section{Education}
 
 \tabbedblock{
-    {2015-present} \> Ph.D. Candidate in Computer Science - University of Chicago \\[5pt]
-    \> Advisor: Aaron Elmore \\[5pt]
+    {2015-2020} \> Ph.D. in Computer Science - University of Chicago \\[5pt]
+    \> Advisor: Aaron J. Elmore \\[5pt]
     {2011-2014} \> M.S. in Computer Science - Institute of Computing Technology, Chinese Academy of Sciences \\[5pt]
     \> Advisor: Wei Li \\[5pt]
     {2007-2011} \> B.S. in Software Engineering - Huazhong University of Science \& Technology 
@@ -86,8 +95,31 @@ Query Processing/Optimization, Cloud Database, Transaction Processing
 %----------------------------------------------------------------------------------------
 %	Publication SECTION
 %----------------------------------------------------------------------------------------
-\section{Publications at \textcolor{maroon}{UChicago}}
+\section{Recent Publications}
 \pubgroup{
+    \pub{Flexible Rule-Based Decomposition and Metadata Independence in Modin: A Parallel Dataframe System}
+    	\> Devin Petersohn*, \textbf{Dixin Tang}*, Rehan Durrani, Areg Melik-Adamyan, Joseph E. Gonzalez, \\
+    	\> Anthony D. Joseph, Aditya G. Parameswaran \\
+    	\> \textbf{VLDB 2022} (*Equal contribution) \\[5mm]
+
+    \pub{Lux: Always-on Visualization Recommendations for Exploratory Dataframe Workflows}
+    	\> Doris Jung-Lin Lee, \textbf{Dixin Tang}, Kunal Agarwal, Thyne Boonmark, Caitlyn Chen, Jake Kang, \\
+    	\> Ujjaini Mukhopadhyay, Jerry Song, Micah Yong, Marti A. Hearst, Aditya G. Parameswaran \\
+    	\> \textbf{VLDB 2022} \\[5mm]
+
+    \pub{Enhancing the Interactivity of Dataframe Queries by Leveraging Think Time}
+    	\> Doris Xin, Devin Petersohn, \textbf{Dixin Tang}, Yifan Wu, Joseph E. Gonzalez, Joseph M. Hellerstein,  \\
+    	\> Anthony D. Joseph, Aditya G. Parameswaran \\
+    	\> \textbf{IEEE Data Eng. Bull. 2021} \\[5mm]
+
+    \pub{Resource-efficient Shared Query Execution via Exploiting Time Slackness}
+    	\> \textbf{Dixin Tang}, Zechao Shang, William Ma, Aaron J. Elmore, Sanjay Krishnan \\
+    	\> \textbf{SIGMOD 2021} \\[5mm]
+
+    \pub{CIAO: An Optimization Framework for Client-Assisted Data Loading}
+    	\> Cong Ding, \textbf{Dixin Tang}, Xi Liang, Aaron J. Elmore, Sanjay Krishnan \\
+    	\> \textbf{ICDE 2021, Short Paper} \\[5mm]
+    	
     \pub{\db in Action: Resource-Efficient Query Execution by Exploiting Time Slackness}
        \> \textbf{Dixin Tang}, Zechao Shang, Aaron J. Elmore, Sanjay Krishnan, Michael J. Franklin \\
        \> \textbf{VLDB 2020, Demo} \\[5mm]
@@ -162,54 +194,87 @@ and propose optimization opportunities.}
 %	SYSTEM BUILDING EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\section{System Building Experience}
+%\section{System Building Experience}
+%
+%\system{Multi-Query Optimization in SparkSQL}
+%{I extend SparkSQL to support multi-query optimization for the full TPC-H test suite. 
+%The framework takes Dataframe queries as input and generates a query plan 
+%that shares the execution of all submitted queries. 
+%I enhance each intermediate tuple during query execution to 
+%additionally include the query IDs that the tuple is valid to 
+%and modify SparkSQL operators to leverage this information 
+%to support shared query execution.}
+%
+%\system{Complex Materialized View Maintenance in SparkSQL}
+%{I extend SparkSQL to support maintaining materialized views with deletes and updates.
+%The system supports complex materialized views that are beyond select-project-join-aggregate queries. 
+%Specifically, the supported operators include select, project, aggregate, sort, materialize, distinct, 
+%and joins (inner, outer, and anti join), and there is no ordering limit about these operators.}
+%
+%\system{Intermediate State Management in \pg}
+%{I extend \pg to support materialized view maintenance with intermediate state management. 
+%The modified \pg can selectively discard some intermediate states to save memory resources. 
+%When a discarded state is required to process new data, the system can rebuild this state from saved intermediate states 
+%to quickly update the materialized view.
+%}
+%
+%\system{Adaptive Concurrency Control in Main-Memory Database}
+%{I develop a key-value main-memory database which hosts several concurrency control protocols 
+%including partition-based concurrency control, two-phase locking, and optimistic concurrency control protocols. 
+%The database uses a machine learning model to adaptively apply a protocol to a partition of the database 
+%and reconfigures protocols in response to workload changes.}
+%
+%
+%\vspace{-5mm}
 
-\system{Multi-Query Optimization in SparkSQL}
-{I extend SparkSQL to support multi-query optimization for the full TPC-H test suite. 
-The framework takes Dataframe queries as input and generates a query plan 
-that shares the execution of all submitted queries. 
-I enhance each intermediate tuple during query execution to 
-additionally include the query IDs that the tuple is valid to 
-and modify SparkSQL operators to leverage this information 
-to support shared query execution.}
+%\section{Mentoring Experience}
 
-\system{Complex Materialized View Maintenance in SparkSQL}
-{I extend SparkSQL to support maintaining materialized views with deletes and updates.
-The system supports complex materialized views that are beyond select-project-join-aggregate queries. 
-Specifically, the supported operators include select, project, aggregate, sort, materialize, distinct, 
-and joins (inner, outer, and anti join), and there is no ordering limit about these operators.}
+%\mentor{Cong Ding, Undergraduate}{July 2019-Present}
+%{I mentor Cong Ding on client-assisted data loading project, 
+%which exploits partial data loading to make data quickly available, but not heavily sacrifice query performance. 
+%The research paper is under preparation.}
 
-\system{Intermediate State Management in \pg}
-{I extend \pg to support materialized view maintenance with intermediate state management. 
-The modified \pg can selectively discard some intermediate states to save memory resources. 
-When a discarded state is required to process new data, the system can rebuild this state from saved intermediate states 
-to quickly update the materialized view.
-}
-
-\system{Adaptive Concurrency Control in Main-Memory Database}
-{I develop a key-value main-memory database which hosts several concurrency control protocols 
-including partition-based concurrency control, two-phase locking, and optimistic concurrency control protocols. 
-The database uses a machine learning model to adaptively apply a protocol to a partition of the database 
-and reconfigures protocols in response to workload changes.}
-
-
-\vspace{-5mm}
-
-\section{Mentoring Experience}
-
-\mentor{Cong Ding, Undergraduate}{July 2019-Present}
-{I mentor Cong Ding on client-assisted data loading project, 
-which exploits partial data loading to make data quickly available, but not heavily sacrifice query performance. 
-The research paper is under preparation.}
-
-\vspace{-5mm}
+%\vspace{-5mm}
 
 %----------------------------------------------------------------------------------------
 % Research Projects
 %----------------------------------------------------------------------------------------
-\section{Research Projects at \textcolor{maroon}{UChicago}}
+\section{Recent Research Projects}
 
-\project{\Incability-aware Shared Query Execution}{Mar. 2020-Present}
+\project{Dataspread: A Scalable Spreadsheet System}{Jan. 2021-Present}
+{Spreadsheets have found ubiquitous use by scientists, business and financial analysts, 
+researchers, and lay users. However, spreadsheets cannot express complex operations (e.g., joins), 
+cannot handle large datasets, do not support collaboration, and foster errors, redundancy, and stale data. 
+On the other hand, relational databases are well-known to be powerful and scalable, but are not flexible, intuitive, and interactive.
+DataSpread addresses these limitations by holistically unifying spread-sheets with databases: 
+preserving spreadsheets as the front-end, and databases as the back-end.}
+
+\project{Modin: A Scalable Dataframe System}{Jan. 2021-Present}
+{Dataframes have become universally popular as a means to flexibly represent data 
+in various stages of structure, and manipulate it using a rich set of operators---thereby becoming an essential tool in the data scientists' toolbox. However, dataframe systems, such as pandas, scale poorly---and are non-interactive on moderate
+to large datasets. We develop Modin to address this scalability problem and maintain the familiar pandas APIs for data scientists.}
+
+\project{Lux: Always-on Visualization Recommendationsfor Exploratory Data Science}{Jan. 2021-Present}
+{Exploratory data science largely happens in computational notebooks with dataframe API, such as pandas, 
+that support flexible means to transform, clean, and analyze data.
+Yet, visually exploring data in dataframes remains tedious, requiring substantial programming effort for visualization 
+and mental effort to determine what analysis to perform next. 
+We propose Lux, an \emph{always-on} framework for accelerating visual insight discovery in data science workflows. 
+When users print a dataframe in their notebooks, 
+Lux recommends visualizations to provide a quick overview of the patterns and trends and suggests promising analysis directions.}
+
+\project{\db: Resource-efficient Database Execution}{July 2019-Mar. 2021}
+{\db is a new database for processing dynamic datasets (e.g. streaming tuples). 
+It exploits intelligent deferment to achieve low resource consumption 
+and high query performance at the same time. 
+In \db, users can trade-off between resource consumption and query performance 
+by specifying a maximally allowed time slackness 
+between the data is ready and the corresponding query result is available to users. 
+Our system integrates the slackness constraints along with information 
+about new data and query structures into the query optimizer 
+to unlock new resource-efficient query execution plans.}
+
+\project{\Incability-aware Shared Query Execution}{Mar. 2020-Mar. 2021}
 {This project studies shared execution across standing queries that access the same data, 
 but have different performance requirements. 
 Shared execution eliminates redundant work across queries to reduce computing resources. 
@@ -222,30 +287,14 @@ and finds efficient query plans that
 reduce redundant work across concurrent queries and also avoid the cost of eager incremental executions. 
 }
 
-\project{Client-assisted Data Loading (mentoring project)}{July 2019-Present}
+\project{Client-assisted Data Loading}{July 2019-Dec. 2020}
 {Data loading is a time-consuming process. 
-I mentor an undergraduate student to study 
-lazily loading data to make data available earlier, but not heavily sacrifice query performance. 
-I advise the student to redesign the data loading process 
-by actively pushing predicates of prospective queries into 
-the clients (e.g. edge devices) 
-to generate bit-vectors that indicate whether a tuple 
-is valid for a predicate. 
+We study lazily loading data to make data available earlier, but not heavily sacrifice query performance. 
+We redesign the data loading process by actively pushing predicates of prospective queries into 
+the clients (e.g. edge devices) to generate bit-vectors that indicate whether a tuple is valid for a predicate. 
 These bit vectors are used to partially load data that is most frequently accessed by prospective queries. 
 When queries access unloaded data, the system uses the bit-vectors as an index to accelerate the query execution 
-by skipping irrelevant tuples.
-}
-
-\project{\db: Resource-efficient Database Execution}{July 2019-Present}
-{\db is a new database for processing dynamic datasets (e.g. streaming tuples). 
-It exploits intelligent deferment to achieve low resource consumption 
-and high query performance at the same time. 
-In \db, users can trade-off between resource consumption and query performance 
-by specifying a maximally allowed time slackness 
-between the data is ready and the corresponding query result is available to users. 
-Our system integrates the slackness constraints along with information 
-about new data and query structures into the query optimizer 
-to unlock new resource-efficient query execution plans.}
+by skipping irrelevant tuples.}
 
 \project{\Incability-aware Query Processing}{Mar. 2019-June 2020}
 {This project studies how to efficiently maintain non-positive standing queries. 
@@ -255,7 +304,7 @@ especially when the database eagerly maintains non-positive queries,
 because output tuples in earlier executions may be removed by later executions. 
 Observing that incremental executions for different parts of a query 
 increase different amounts of total work for the same reduced latency, 
-I define a metric, \textit{\incability} to quantify the cost-effectiveness of incremental executions. 
+We define a metric, \textit{\incability} to quantify the cost-effectiveness of incremental executions. 
 Our system leverages this metric to decide the execution frequencies of different parts of a query, 
 which is optimized to reduce total query work and also achieve low query latency.}
 
@@ -273,7 +322,7 @@ for processing new data within a memory budget.
 Therefore, \iqp achieves low latency of updating query results with limited memory consumption.}
 
 \project{Adaptive Concurrency Control for Main-memory Database}{Sep. 2015-Nov. 2017}
-{I build a main-memory database that supports adaptively mixing multiple forms of concurrency control with minimal overhead. 
+{We build a main-memory database that supports adaptively mixing multiple forms of concurrency control with minimal overhead. 
 This system decomposes the workload into partitions and 
 selects a concurrency control protocol for each partition of workload that the protocol is optimized for, 
 and during workload changes adaptively reconfigures the protocols online. 
@@ -281,17 +330,23 @@ The experiments show that this approach has a higher throughput than the single 
 
 \section{Earlier Projects}
 \project{Structured Data Shuffling for Big Data Analytical Stacks}{Nov. 2013-Jan. 2015}
-{
-I build a structured data shuffling procedure that can leverage the semantics of SQL queries to apply efficient compression algorithms 
-and discard unnecessary data during data shuffling. 
-}
+{We build a structured data shuffling procedure that can leverage the semantics of SQL queries to apply efficient compression algorithms 
+and discard unnecessary data during data shuffling.}
 
 \project{A Fast and Space-efficient Join Method for Log Processing in MapReduce}{Sep. 2012-Nov. 2013}
-{
-I design a join method that achieves high query performance with a small extra storage cost for log processing. 
-It shuffles the log table to avoid huge storage consumption and optimizes the shuffle procedure to achieve high query performance.
-}
+{We design a join method that achieves high query performance with a small extra storage cost for log processing. 
+It shuffles the log table to avoid huge storage consumption and optimizes the shuffle procedure to achieve high query performance.}
 
+\vspace{-5mm}
+
+%----------------------------------------------------------------------------------------
+%       SERVICE SECTION
+%----------------------------------------------------------------------------------------
+\section{Professional Services}
+\tabbedblock{
+    Program Committee: SIGMOD'22 \\[5pt]
+    Reviewer: IEEE VIS'21 \\[5pt]
+}
 \vspace{-5mm}
 
 %----------------------------------------------------------------------------------------
@@ -306,11 +361,6 @@ It shuffles the log table to avoid huge storage consumption and optimizes the sh
     {2016} \> CERES 1st year Graduate Research Award - The University of Chicago
 }
 \vspace{-5mm}
-
-
-%----------------------------------------------------------------------------------------
-%	EMPLOYMENT HISTORY SECTION
-%----------------------------------------------------------------------------------------
 
 \section{Teaching Assistant}
 
@@ -343,7 +393,16 @@ It shuffles the log table to avoid huge storage consumption and optimizes the sh
 \parbox{0.5\textwidth}{ % First block
 \begin{tabbing}
 \hspace{1.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
-{\bf Name} \> Aaron Elmore \\ % Referee name
+{\bf Name} \> Aditya G. Parameswaran \\ % Referee name
+{\bf Affiliate} \> University of California, Berkeley \\ % Referee company
+{\bf Position} \> Assistant Professor \\ % Referee job title 
+{\bf Contact} \> adityagp@eecs.berkeley.edu % Referee contact information
+\end{tabbing}}
+\\
+\parbox{0.5\textwidth}{ % First block
+\begin{tabbing}
+\hspace{1.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Name} \> Aaron J. Elmore \\ % Referee name
 {\bf Affiliate} \> University of Chicago \\ % Referee company
 {\bf Position} \> Assistant Professor \\ % Referee job title 
 {\bf Contact} \> aelmore@cs.uchicago.edu % Referee contact information
@@ -352,7 +411,7 @@ It shuffles the log table to avoid huge storage consumption and optimizes the sh
 \parbox{0.5\textwidth}{ % Second block
 \begin{tabbing}
 \hspace{1.5cm} \= \hspace{4cm} \= \kill % Spacing within the block
-{\bf Name} \> Michael Franklin \\ % Referee name
+{\bf Name} \> Michael J. Franklin \\ % Referee name
 {\bf Affiliate} \> University of Chicago \\ % Referee company
 {\bf Position} \> Liew Family Chairman of Computer Science \\ % Referee job title 
 {\bf Contact} \> mjfranklin@uchicago.edu % Referee contact information
