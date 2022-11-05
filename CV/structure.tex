@@ -121,6 +121,15 @@ SmallCapsFeatures = {Letters = SmallCaps}
 
 \newcommand{\pub}[1]{\sqbullet \> #1\\} % Define a custom command for individual interests
 
+\newcounter{pubcounter}
+\setcounter{pubcounter}{0}
+\newcommand\showpubcounter{\stepcounter{pubcounter}\thepubcounter}
+\newcommand{\pubWithNum}[1]{P\showpubcounter. \> #1\\} % Define a custom command for individual interests
+\newcounter{mancounter}
+\setcounter{mancounter}{0}
+\newcommand\showmancounter{\stepcounter{mancounter}\themancounter}
+\newcommand{\manWithNum}[1]{M\showmancounter. \> #1\\} % Define a custom command for individual interests
+
 %----------------------------------------------------------------------------------------
 %	TABBED BLOCK COMMAND
 %----------------------------------------------------------------------------------------
@@ -165,6 +174,18 @@ SmallCapsFeatures = {Letters = SmallCaps}
 \end{myindentpar}
 }
 
+\newcounter{rescounter}
+\setcounter{rescounter}{0}
+\newcommand\showrescounter{\stepcounter{rescounter}\therescounter}
+\newcommand{\projectWithNum}[3]{
+R\showrescounter. $\>$ \textbf{#1} \hspace*{\fill} #2
+
+\vspace{-2mm}
+\begin{myindentpar}{0.72cm}
+#3
+\end{myindentpar}
+}
+
 \newcommand{\system}[2]{
 \sqbullet \tab \textbf{#1}
 
@@ -175,11 +196,11 @@ SmallCapsFeatures = {Letters = SmallCaps}
 }
 
 \newcommand{\intern}[5]{
-\sqbullet \tab \textbf{#1} \hspace*{\fill} #2 \\
-\emptybullet \tab Project: #3 \hspace*{\fill} Mentor: #4
+\sqbullet $\>$ \textbf{#1} \hspace*{\fill} #2 \\
+\emptybullet $\>$ Project: #3 \hspace*{\fill} Mentor: #4
 
 \vspace{-2mm}
-\begin{myindentpar}{1.2cm}
+\begin{myindentpar}{0.36cm}
 #5
 \end{myindentpar}
 }
