@@ -186,6 +186,25 @@ R\showrescounter. $\>$ \textbf{#1} \hspace*{\fill} #2
 \end{myindentpar}
 }
 
+\newcommand{\projectWithNumIndent}[3]{
+R\showrescounter. $\>$ \textbf{#1} \hspace*{\fill} #2
+
+\vspace{-2mm}
+\begin{myindentpar}{0.9cm}
+#3
+\end{myindentpar}
+}
+
+\newcommand{\projectWithNumUrl}[4]{
+R\showrescounter. $\>$ \textbf{#1} \hspace*{\fill} #2 \\
+\phantom{R1. }$\>$ Code: \url{#3}
+
+\vspace{-2mm}
+\begin{myindentpar}{0.72cm}
+#4
+\end{myindentpar}
+}
+
 \newcommand{\system}[2]{
 \sqbullet \tab \textbf{#1}
 
