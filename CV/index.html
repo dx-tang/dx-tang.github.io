@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>News Homepage</title>
+  <style>
+    .news-item {
+      margin-bottom: 10px;
+    }
+    .hidden-news {
+      display: none;
+    }
+  </style>
+  <script>
+    function showAllNews() {
+      var newsItems = document.getElementsByClassName("news-item");
+      for (var i = 0; i < newsItems.length; i++) {
+        newsItems[i].classList.remove("hidden-news");
+      }
+    }
+
+    function collapseNews() {
+      var newsItems = document.getElementsByClassName("news-item");
+      var maxItemsToShow = 5; // Replace with your desired number of news to show
+
+      for (var i = maxItemsToShow; i < newsItems.length; i++) {
+        newsItems[i].classList.add("hidden-news");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>News Homepage</h1>
+
+  <div id="newsContainer">
+    <div class="news-item">
+      <h2>News Item 1</h2>
+      <p>News content goes here...</p>
+    </div>
+    <div class="news-item">
+      <h2>News Item 2</h2>
+      <p>News content goes here...</p>
+    </div>
+    <div class="news-item">
+      <h2>News Item 3</h2>
+      <p>News content goes here...</p>
+    </div>
+    <div class="news-item">
+      <h2>News Item 4</h2>
+      <p>News content goes here...</p>
+    </div>
+    <div class="news-item">
+      <h2>News Item 5</h2>
+      <p>News content goes here...</p>
+    </div>
+    <div class="news-item hidden-news">
+      <h2>News Item 6</h2>
+      <p>News content goes here...</p>
+    </div>
+    <div class="news-item hidden-news">
+      <h2>News Item 7</h2>
+      <p>News content goes here...</p>
+    </div>
+    <div class="news-item hidden-news">
+      <h2>News Item 8</h2>
+      <p>News content goes here...</p>
+    </div>
+  </div>
+
+  <button onclick="showAllNews()">Show All News</button>
+  <button onclick="collapseNews()">Collapse News</button>
+</body>
+</html>

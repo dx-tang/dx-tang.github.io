@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <title>Dixin's Homepage</title>
+        
+        <link href="icon.png" rel=icon>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <style> 
+            .container-fluid {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 64em;
+                margin-top: 20px;
+            }
+        </style>
+
+        <link href="css/customize.css" rel="stylesheet">
+        
+    </head>
+    <script src="js/w3.js"></script>
+    <body>
+        <div class="container-fluid normal-font">
+
+	    <div w3-include-html="header.html"></div> 
+            <script>
+		w3.includeHTML();
+	   </script>
+
+      <hr>
+      <a href="index.html">Overview</a>&nbsp;&nbsp;&nbsp;
+      <a href="pubs.html">Publications</a>&nbsp;&nbsp;&nbsp;
+      <a href="projects.html"><b>Projects</b></a>&nbsp;&nbsp;&nbsp;
+      <a href="service.html">Services</a>&nbsp;&nbsp;&nbsp;
+      <hr>
+      
+            <div class="row" style="margin-top: 10px">
+		<div class="col-md-12">
+			<p class="header-font">Current Projects</p>
+			<p class="text-justify">
+			I am currently deliberating the next step of my research, an exciting stage! I am broadly interested in query optimizations for non-relational workloads (e.g., pandas dataframes, spreadsheet formulas, and machine learning), providing fine-grained query service in the cloud, and data management for data clouds.
+			</p>
+		</div>	
+	    </div>
+            
+            <div class="row" style="margin-top: 10px">
+                <div class="col-md-12">
+                    <p class="header-font">Past Projects</p>
+                    <p class="text-justify">
+                    My past research in PhD and PostDoc was focused on supporting user-centered analytical interfaces at scale by reshaping modern data analytical stacks on three aspects:
+                    <ul>
+                    	<li>Interactivity: how do we help end-users consume visual results with desirable properties and performance preserved?</li>
+                    	<li>Scalability: how do we scale the execution of user-centered analytical interfaces to multiple machines?</li>
+                    	<li>Cost: how do we reduce resource usage while not sacrificing performance?</li>
+                    </ul>
+                    Please check out this <a href="https://youtu.be/xhA-zZL4tRc" target="_blank">video</a> for an overview of my past research. The major projects I worked on include:
+                    <ul>
+                         <li><a href="https://github.com/forms-org/forms" target="_blank">FormS</a>: a Python library for scalable spreadsheet formula execution</li>
+                         <li><a href="https://github.com/transactional-panorama/TP" target="_blank">Transactional Panorama</a>:  a conceptual framework for user perception in analytical
+visual interfaces</li>
+                    	<li><a href="https://github.com/taco-org/taco" target="_blank">Taco</a>: efficient and compact spreadsheet formula graphs</li>
+                    	<li><a href="https://github.com/modin-project/modin" target="_blank">Modin</a>: a scalable dataframe system</li>
+                    	<li><a href="https://github.com/lux-org/lux" target="_blank">Lux</a>: 
+                    a visualization recommendation library for data scientists to perform easy data exploration in dataframe workflow</li>
+                    <li><a href="http://cidrdb.org/cidr2020/papers/p14-shang-cidr20.pdf" target="_blank" >CrocodileDB</a>: 
+                    a new database architecture that exploits time slackness to enable new resource-efficient query execution (<a href="https://www.youtube.com/watch?v=L7gHYEAdE1o" target="_blank">video</a>)</li>
+                    <li><a href="https://www.cidrdb.org/cidr2017/papers/p63-tang-cidr17.pdf" target="_blank" >ACC</a>: 
+                    a high-performance main-memory database that adaptively choosees and mixes multiple concurrency control protocols</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
+
