@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <title>Dixin's Homepage</title>
+        
+        <link href="icon.png" rel=icon>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <style> 
+            .container-fluid {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 64em;
+                margin-top: 20px;
+            }
+        </style>
+
+        <link href="css/customize.css" rel="stylesheet">
+        
+    </head>
+    <script src="js/w3.js"></script>
+    <body>
+        <div class="container-fluid normal-font">
+
+	    <div w3-include-html="header.html"></div> 
+            <script>
+		w3.includeHTML();
+	   </script>
+
+      <hr>
+      <a href="index.html"><b>Overview</b></a>&nbsp;&nbsp;&nbsp;
+      <a href="pubs.html">Publications</a>&nbsp;&nbsp;&nbsp;
+      <a href="projects.html">Projects</a>&nbsp;&nbsp;&nbsp;
+      <a href="service.html">Services</a>&nbsp;&nbsp;&nbsp;
+      <hr>
+            
+            <div class="row" style="margin-top: 10px">
+                <div class="col-md-12">
+                    
+                    <p class="text-justify">
+                    I am actively seeking Ph.D. students at UT Austin for Fall 2024. This page introduces my research and the Ph.D. admission process.
+                    </p>
+             
+		    <p class="normal-font"><b>My Research</b></p>
+		    <p class="text-justify">
+		    I worked on database systems. My past research focused on empowering end-users to adopt their familiar data analytical interfaces, such 		as spreadsheets, dataframes, and interactive dashboards, to analyze large-scale datasets efficiently via novel system optimizations. Example optimizations include reducing resource consumption without compromising performance and improving performance while preserving crucial system properties, such as consistency and monotonicity. Technically, my research touches on many important database topics, including query optimizations, parallel execution, data loading, and transaction processing. Please check out this  <a href="https://youtu.be/xhA-zZL4tRc" target="_blank">video</a> to learn more about my past research. </p>
+
+		  <p class="text-justify">
+		  Moving forward, my future research interests include building generalized query optimization frameworks for relational and non-relational data analytical workloads and providing fine-grained query services in the cloud. A special interest is in examining the relationship between query optimizations and compiler optimizations and bridging their gap. I am also open to any system problems related to data management.
+		 </p>
+		 
+		 <p class="normal-font"><b>Ph.D. Admission</b></p>
+		   <p class="text-justify">
+		 A Ph.D. application will be reviewed by the CS department and individual professors who express interest in the application. While factors, such as research experience, publications, and reference letters, impact the admission decision, the following four aspects play a dominant role in my assessment:</p>
+		
+		<p class="text-justify">
+		<b>Curiosity.</b> I believe an outstanding Ph.D. student will always ask questions about their and others’ research and set out to answer these questions, driven by their innate curiosity rather than their advisor. For example, it is common to encounter an unexpected experiment result, in which case the student will try to unravel its intricacies by repeatedly asking and answering many mini-questions, leading to the final answer. </p>
+
+		<p class="text-justify">
+		<b>Resilience.</b> Conducting research is inherently challenging as we will venture into uncharted territories and do things that nobody has done. Consequently, encountering hurdles and difficulties, such as bad experimental results or negative reviews, is inevitable. In my opinion, a successful Ph.D. student should quickly recover from such setbacks and find ways to overcome them. Of course, talking to their advisor is always helpful in these situations.</p>
+
+		<p class="text-justify">
+		<b>Communication.</b> Good communication skills are crucial to a successful Ph.D. career. While communication skills will be trained throughout the Ph.D. program, I expect prospective students can communicate their ideas clearly and logically about the things they are familiar with, such as the projects they have worked on or basic CS concepts.</p>		
+
+		<p class="text-justify">
+		<b>Engineering.</b>
+		Being system researchers, substantiating the effectiveness of our research ideas requires building a software system from scratch or implementing these ideas in an existing system, which requires a significant amount of engineering effort. I hope my students have the courage to tackle substantial engineering challenges and are willing to refine their engineering skills in the process.
+		</p>
+		
+	 	<p class="text-justify">
+		Having said that, if you find yourself without particularly strong application materials, such as top-tier publications or reference letters from renowned researchers, yet firmly believe you excel in the four key aspects mentioned earlier, I encourage you to apply! I will select a substantial pool of candidates to talk to and the decision will be based on a comprehensive evaluation of the application materials and the one-on-one meetings.
+		</p>
+		
+		<p class="text-justify">
+		Finally, for students who feel their application is not strong enough but want to impress me, please try one of the following projects (or their simplified versions) independently:  </p>
+		<ul class="text-justify" style="padding-left:15px;margin:0px;margin-bottom:15px">
+			<li>Fully support inner, outer, semi, and anti joins in <a href="https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html", target="_blank">Spark Structured Streaming</a>. By “fully”, I mean these operators are stateful and support both inserting new tuples and deleting old tuples on their input streams.</li>
+			
+			<li>Support incremental executions for select, project, equi join, and aggregation operators in <a href="https://www.postgresql.org/", target="_blank">PostgreSQL</a>. You can assume the changes to the base tables are insert-only. The codebase of PostgreSQL is well-documented, and hacking its execution engine is doable.
+			</li>
+			
+			<li>Implement the <a href="https://pages.cs.wisc.edu/~paris/cs784-f19/lectures/lecture4.pdf", target="_blank">Yannakakis algorithm</a> in PostgreSQL, use the <a href="https://www.tpc.org/tpc_documents_current_versions/current_specifications5.asp", target="_blank">TPC-H</a> benchmark to compare its performance with the plans generated by PostgreSQL’s default query optimizer, and explain the experimental results.
+			</li>
+			
+			<li>Implement a parallel dataframe system that provides the same interface as <a href="https://pandas.pydata.org/", target="_blank">pandas</a> but is faster than <a href="https://github.com/modin-project/modin", target="_blank">Modin</a> and explain the experiment results. You can select a subset of pandas functions to implement.
+			</li>
+			
+			<li>Implement a system that allows users to adopt <a href="https://support.microsoft.com/en-au/office/excel-functions-by-category-5f91f4e9-7b42-46d2-9bd1-63f26a86c0eb", target="_blank">spreadsheet formulas</a> to analyze the data stored in PostgreSQL and optimize the performance of formula executions. You can select a subset of spreadsheet formulas to implement. Do not worry about the UI. Providing a command line or Python interface is enough.
+			</li>
+		 </ul>
+				
+                </div>
+            </div>
+
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
+
