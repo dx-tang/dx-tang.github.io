@@ -1,132 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1">
-        <title>Dixin Tang</title>
-        
-        <link href="icon.ico" rel=icon>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <title>Dixin Tang</title>
 
-        <!-- Bootstrap Core CSS -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="icon.ico" rel="icon">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/customize.css" rel="stylesheet">
 
-        <style> 
-            .container-fluid {
-                margin-left: auto;
-                margin-right: auto;
-                max-width: 64em;
-                margin-top: 20px;
-            }
-        </style>
-
-        <link href="css/customize.css" rel="stylesheet">
-        
-    </head>
-    <script src="js/w3.js"></script>
-    <body>
-        <div class="container-fluid normal-font">
-
-	    <div w3-include-html="header.html"></div> 
-            <script>
-		w3.includeHTML();
-	   </script>
-
+    <style>
+      .container-fluid {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 64em;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid normal-font">
+      <div id="site-header"></div>
       <hr>
-      <a href="index.html"><b>Overview</b></a>&nbsp;&nbsp;&nbsp;
-      <a href="pubs.html">Publications</a>&nbsp;&nbsp;&nbsp;
-      <a href="projects.html">Projects</a>&nbsp;&nbsp;&nbsp;
-      <a href="team.html">Team</a>&nbsp;&nbsp;&nbsp;
-      <a href="service.html">Services</a>&nbsp;&nbsp;&nbsp;
-      <a href="teaching.html">Teaching</a>&nbsp;&nbsp;&nbsp;
+      <div id="site-nav"></div>
       <hr>
-	   
-            <div class="row" style="margin-top: 20px">
-                <div class="col-md-12">
-                    <p class="header-font">About</p>
-                    <p class="text-justify">
-                    I am an Assistant Professor in the Department of Computer Science at UT Austin, where I co-direct the <a href="https://ut-datasys.github.io/">UT Data Systems Lab</a> and serve as a faculty member of the <a href="https://infraaicenter.org/">InfraAI Center</a>.</p>
+      <div id="page-content"></div>
+    </div>
 
-                    <p>I earned my Ph.D. degree from the CS Department of UChicago, 
-              advised by <a href="http://people.cs.uchicago.edu/~aelmore/">Prof. Aaron Elmore</a>. 
-I also worked closely with <a href="http://people.cs.uchicago.edu/~skr">Prof. Sanjay Krishnan</a> 
-                    and <a href="https://computerscience.uchicago.edu/people/profile/michael-franklin/">Prof. Michael Franklin</a> at UChicago.  
-                    Before joining UT Austin,
-                    I was a postdoc scholar at UC Berkeley working with <a href="https://people.eecs.berkeley.edu/~adityagp/">Prof. Aditya Parameswaran</a>.
-                    </p>
-                    
-                    <p class="text-justify">
-I am passionate about building data systems and 
-conducting interdisciplinary research at the intersections of databases 
-with distributed systems, storage systems, machine learning, and programming languages.  
-My current research focuses on <b>building efficient and scalable data systems for modern hardware and applications</b>. My research projects can be found on this <a href="projects.html">page</a>.
-                    </p>
+    <script>
+      window.PAGE_CONFIG = {
+        title: "Dixin Tang",
+        activeNav: "index.html",
+        sections: [
+          { title: "About", markdown: "about.md" },
+          {
+            title: "News",
+            markdown: "news.md",
+            listLimit: 6,
+            appendHtml: '<p><a href="news.html">More News</a></p>'
+          },
+          { title: "Recent Publications", markdown: "publications.md", listLimit: 4 }
+        ]
+      };
+    </script>
 
-                    <p class="text-justify">
-                    <b>I am seeking self-motivated Ph.D. students for Fall'26. Please check out this <a href="hiring.html">page</a> for PhD hiring information and feel free to reach out if you are interested.</b>
-			    For undergraduates or master's students who are interested in working with me, please fill in this <a href="https://forms.gle/yATJ71eSCud91dot7">form</a>.
-                    </p>
-
-                </div>
-            </div>
-            
-            <div class="row" style="margin-top: 10px">
-                <div class="col-md-12">
-                    <p class="header-font">News</p>
-                    <p> 2025-11: Check out <a href="https://arxiv.org/pdf/2511.00995">PathFinder</a>, a novel indexing framework that efficiently supports conjunctions and disjunctions for filtered ANNS.
-                    <p> 2025-08: Our paper "Homomorphism Calculus for User-Defined Aggregations" is accepted by OOPSLA'25.
-                    <p> 2025-07: I will teach a new course, <a href="https://ut-db-teaching.github.io/cs395t-fall25/">CS 395T: Database Systems and LLMs</a>, in Fall 2025.
-                    <p> 2025-05: Received the Distinguished Reviewer Award of SIGMOD'25.
-                    <p> 2025-04: The extended version of the transactional panorama paper is accepted to the “Best of VLDB 2023” special issue of VLDB Journal.
-                    <p> 2025-03: Our paper "Tigon: A Distributed Database for a CXL Pod" is accepted by OSDI'25. This is the first distributed transactional database on CXL memory!
-                    <p> <a href="news.html">More News</a></p>
-                </div>
-            </div>
-
-            <div class="row" style="margin-top: 10px">
-                <div class="col-md-12">
-                <p class="header-font">Recent Publications</p>
-                <ul style="padding-left:15px;margin:0px;margin-bottom:15px;list-style-type: disc;">
-                    <li>
-                        <a href="paper/INK.pdf">
-                            Homomorphism Calculus for User-Defined Aggregations
-                        </a><br>
-                          Ziteng Wang, Ruijie Fang, Linus Zheng, <b>Dixin Tang</b>, Isil Dillig 
-                        <br><b>OOPSLA 2025</b> 
-		            </li>
-                     <li>
-                        <a href="paper/tigon-osdi25.pdf">
-                            Tigon: A Distributed Database for a CXL Pod
-                        </a><br>
-                        Yibo Huang, Haowei Chen, Newton Ni, Yan Sun, Vijay Chidambaram, <b>Dixin Tang</b>, Emmett Witchel 
-                        <br><b>OSDI 2025</b> (<a href="https://github.com/ut-datasys/tigon" target="_b    lank">Code</a>)
-		            </li>
-                     <li>
-                        <a href="https://dl.acm.org/doi/10.1145/3689031.3717485">
-                            Impeller: Stream Processing on Shared Logs
-                        </a><br>
-                        Zhiting Zhu, Zhipeng Jia, Newton Ni, <b>Dixin Tang</b>, Emmett Witchel 
-                        <br><b>EuroSys 2025</b>
-		            </li>
-                    <li>
-                        <a href="paper/Pasha-CIDR25.pdf">
-                            Pasha: An Efficient, Scalable Database Architecture for CXL Pods
-                        </a><br>
-                        Yibo Huang, Newton Ni, Vijay Chidambaram, Emmett Witchel, <b>Dixin Tang</b>
-                        <br><b>CIDR 2025</b>
-		            </li>
-
-                </ul>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </body>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/markdown-site.js"></script>
+  </body>
 </html>
-

@@ -1,72 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1">
-        <title>Dixin Tang</title>
-        
-        <link href="icon.ico" rel=icon>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <title>Dixin Tang</title>
 
-        <!-- Bootstrap Core CSS -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="icon.ico" rel="icon">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/customize.css" rel="stylesheet">
 
-        <style> 
-            .container-fluid {
-                margin-left: auto;
-                margin-right: auto;
-                max-width: 64em;
-                margin-top: 20px;
-            }
-        </style>
-
-        <link href="css/customize.css" rel="stylesheet">
-        
-    </head>
-    <script src="js/w3.js"></script>
-    <body>
-        <div class="container-fluid normal-font">
-
-	    <div w3-include-html="header.html"></div> 
-            <script>
-		w3.includeHTML();
-	   </script>
-
+    <style>
+      .container-fluid {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 64em;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid normal-font">
+      <div id="site-header"></div>
       <hr>
-      <a href="index.html">Overview</a>&nbsp;&nbsp;&nbsp;
-      <a href="pubs.html">Publications</a>&nbsp;&nbsp;&nbsp;
-      <a href="projects.html">Projects</a>&nbsp;&nbsp;&nbsp;
-      <a href="team.html"><b>Team</b></a>&nbsp;&nbsp;&nbsp;
-      <a href="service.html">Services</a>&nbsp;&nbsp;&nbsp;
-      <a href="teaching.html">Teaching</a>&nbsp;&nbsp;&nbsp;
+      <div id="site-nav"></div>
       <hr>
-            
-            <div class="row" style="margin-top: 10px">
-                <div class="col-md-12">
-                 <p class="header-font">PhD Students</p>
-                 
-      			 <ul style="padding-left:0;margin:0px;margin-bottom:15px;list-style-type: none;">
-			      <li>Tianming Wu </li>
-			      <li>Yibo Huang (co-advised with Prof. Witchel)  </li>
-                  <li>Ziteng Wang (co-advised with Prof. Dillig) </li> 
-		         </ul>
+      <div id="page-content"></div>
+    </div>
 
-                 <p class="header-font">Undergraduate Students</p>
-                 
-      			 <ul style="padding-left:0;margin:0px;margin-bottom:15px;list-style-type: none;">
-			      <li>Ashley Feng </li>
-                  <li>Wajeeh Jafry</li>
-                  <li>Seungwon Lee</li>
-			      <li>Hasan Palito </li>
-		         </ul>
-            </div>
-        </div>
+    <script>
+      window.PAGE_CONFIG = {
+        title: "Dixin Tang",
+        activeNav: "team.html",
+        sections: [{ title: "Team", markdown: "team.md" }]
+      };
+    </script>
 
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </body>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/markdown-site.js"></script>
+  </body>
 </html>
-

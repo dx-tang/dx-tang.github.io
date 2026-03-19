@@ -1,0 +1,3 @@
+**I am looking for students interested in data systems research.** Students with a strong background and/or interest in system research, especially around database systems, distributed systems, or systems for machine learning, are highly encouraged to apply.
+
+Please follow the instructions [here](https://www.cs.utexas.edu/graduate-program/prospective-students/apply) to submit an application. Note that the UTCS information on [www.applytexas.org](http://www.applytexas.org) may be outdated. So when asked about choosing a research area, "databases" may not be in the options. In that case, please choose a nearest research area, which will not impact the application.

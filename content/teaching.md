@@ -1,0 +1,4 @@
+- Instructor - [CS 378: Database System Design](https://ut-db-teaching.github.io/cs378-spring26/), Spring 2026
+- Instructor - [CS 395T: Database Systems and LLMs](https://ut-db-teaching.github.io/cs395t-fall25/), Fall 2025
+- Instructor - [CS 347: Data Management](https://ut-db-teaching.github.io/cs347-fall24/), Fall 2024
+- Instructor - CS 395T: Advanced Query Optimizations, Spring 2024

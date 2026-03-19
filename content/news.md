@@ -1,0 +1,28 @@
+- 2025-11: Check out [PathFinder](https://arxiv.org/pdf/2511.00995), a novel indexing framework that efficiently supports conjunctions and disjunctions for filtered ANNS.
+- 2025-08: Our paper "Homomorphism Calculus for User-Defined Aggregations" is accepted by OOPSLA'25.
+- 2025-07: I will teach a new course, [CS 395T: Database Systems and LLMs](https://ut-db-teaching.github.io/cs395t-fall25/), in Fall 2025.
+- 2025-05: Received the Distinguished Reviewer Award of SIGMOD'25.
+- 2025-04: The extended version of the transactional panorama paper is accepted to the "Best of VLDB 2023" special issue of VLDB Journal.
+- 2025-03: Our paper "Tigon: A Distributed Database for a CXL Pod" is accepted by OSDI'25. This is the first distributed transactional database on CXL memory.
+- 2025-02: I am invited to be the PC member of VLDB 2026.
+- 2025-01: Our paper "Impeller: Stream Processing on Shared Logs" is accepted by EuroSys'25.
+- 2024-12: I am invited to be the PC member of SIGMOD 2026.
+- 2024-10: Our vision paper "Pasha: An Efficient, Scalable Database Architecture for CXL Pods" is accepted by CIDR'25. In this paper, we have proposed the first distributed transactional database architecture on CXL memory. Super excited to push this direction.
+- 2024-07: The transactional panorama paper from VLDB'23 is invited to the "Best of VLDB 2023" special issue of VLDB Journal.
+- 2024-07: I am invited to be the PC member of ICDE 2025 and the Demo Track of SIGMOD 2025.
+- 2024-06: Our paper "Dealing with Acronyms, Abbreviations, and Typos in Real-World Entity Matching" is accepted by VLDB 2024.
+- 2024-01: I am invited to be the PC member of HILDA 2024 and VLDB 2025.
+- 2024-01: UTCS now has a database research page. Check [it](https://www.cs.utexas.edu/research/databases) out.
+- 2023-12: I am invited to be the PC member of SIGMOD 2025. Check out the changes to this year's [CFP](https://2025.sigmod.org/calls_papers_sigmod_research.shtml).
+- 2023-06: I have published a video to summarize my research in my Ph.D. and PostDoc. Please check it out [here](https://youtu.be/xhA-zZL4tRc).
+- 2023-06: Our paper "Visualizing Spreadsheet Formula Graphs Compactly" is accepted by the Demo Track of VLDB 2023.
+- 2023-04: I am invited to be the PC member of [HILDA 2023](https://hilda.io/2023/).
+- 2023-02: Our paper "Efficient and Compact Spreadsheet Formula Graphs" is accepted by ICDE 2023.
+- 2023-01: The paper for Transactional Panorama is accepted by VLDB 2023.
+- 2022-11: I am invited to be the PC member of EDBT 2024.
+- 2022-10: I gave a [talk](https://youtu.be/dGwirGLVM-E) about Lux at EPIC Advance.
+- 2022-09: I gave a talk at VLDB'22 about our paper "Flexible Rule-Based Decomposition and Metadata Independence in Modin: A Parallel Dataframe System". Please check out the video [here](https://www.youtube.com/watch?v=mg197sID2X8).
+- 2022-06: I will attend SIGMOD'22 in person and chair Session 2: Query Processing and Optimization.
+- 2021-12: I am invited to be the PC member of SIGMOD 2023.
+- 2021-11: I gave a talk about Modin at RISECamp 2021.
+- 2021-10: Two papers from Modin and Lux projects are accepted by VLDB 2022.

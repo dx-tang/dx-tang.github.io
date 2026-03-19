@@ -1,69 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1">
-        <title>Dixin Tang</title>
-        
-        <link href="icon.ico" rel=icon>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <title>Dixin Tang</title>
 
-        <!-- Bootstrap Core CSS -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="icon.ico" rel="icon">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/customize.css" rel="stylesheet">
 
-        <style> 
-            .container-fluid {
-                margin-left: auto;
-                margin-right: auto;
-                max-width: 64em;
-                margin-top: 20px;
-            }
-        </style>
-
-        <link href="css/customize.css" rel="stylesheet">
-        
-    </head>
-    <script src="js/w3.js"></script>
-    <body>
-        <div class="container-fluid normal-font">
-
-	    <div w3-include-html="header.html"></div> 
-            <script>
-		w3.includeHTML();
-	   </script>
-
+    <style>
+      .container-fluid {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 64em;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid normal-font">
+      <div id="site-header"></div>
       <hr>
-      <a href="index.html">Overview</a>&nbsp;&nbsp;&nbsp;
-      <a href="pubs.html">Publications</a>&nbsp;&nbsp;&nbsp;
-      <a href="projects.html">Projects</a>&nbsp;&nbsp;&nbsp;
-      <a href="team.html">Team</a>&nbsp;&nbsp;&nbsp;
-      <a href="service.html">Services</a>&nbsp;&nbsp;&nbsp;
-      <a href="teaching.html">Teaching</a>&nbsp;&nbsp;&nbsp;
+      <div id="site-nav"></div>
       <hr>
-            
-            <div class="row" style="margin-top: 10px">
-                <div class="col-md-12">
-                    
-                    <p class="text-justify">
+      <div id="page-content"></div>
+    </div>
 
-                    <b> For Fall'26, I am looking for students interested in data systems research. Potential projects include vector databases and large-scale unstructured data analysis systems based on LLMs.</b> 
-                    Students with a strong background and/or interest in system research,
-    especially around in database systems, distributed systems, or systems for machine learning, are highly encouraged to apply. Please follow the instructions 
-    <a href="https://www.cs.utexas.edu/graduate-program/prospective-students/apply">here</a> 
-    to submit an applicaiton. Note that the UTCS information on 
-    <a href="http://www.applytexas.org">www.applytexas.org</a> may be outdated.
-    So when asked about choosing a research area, "databases" may not be in the options. 
-    In that case, please choose a nearest research area, which will not impact the application.				
-                </div>
-            </div>
+    <script>
+      window.PAGE_CONFIG = {
+        title: "Dixin Tang",
+        activeNav: "index.html",
+        sections: [{ title: "PhD Hiring", markdown: "hiring.md" }]
+      };
+    </script>
 
-        </div>
-
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </body>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/markdown-site.js"></script>
+  </body>
 </html>
-
