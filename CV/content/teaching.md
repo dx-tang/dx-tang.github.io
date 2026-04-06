@@ -1,4 +1,5 @@
 ### University of Texas at Austin
+- Instructor | CS 378: Database System Design, Spring 2026
 - Instructor | CS 395T: Database Systems and LLMs, Fall 2025
 - Instructor | CS 347: Data Management, Fall 2024
 - Instructor | CS 395T: Advanced Query Optimizations, Spring 2024

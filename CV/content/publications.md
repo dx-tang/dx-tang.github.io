@@ -1,3 +1,6 @@
+- Optimal Predicate Pushdown Synthesis | Robert Zhang, Eric Hayden Campbell, **Dixin Tang**, Isil Dillig
+  **PLDI 2026**
+
 - Homomorphism Calculus for User-Defined Aggregations | Ziteng Wang, Ruijie Fang, Linus Zheng, **Dixin Tang**, Isil Dillig
   **OOPSLA 2025**
 

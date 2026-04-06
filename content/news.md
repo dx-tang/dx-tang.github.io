@@ -1,3 +1,4 @@
+- 2026-04: Our paper "Optimal Predicate Pushdown Synthesis" is accepted by PLDI'26.
 - 2025-11: Check out [PathFinder](https://arxiv.org/pdf/2511.00995), a novel indexing framework that efficiently supports conjunctions and disjunctions for filtered ANNS.
 - 2025-08: Our paper "Homomorphism Calculus for User-Defined Aggregations" is accepted by OOPSLA'25.
 - 2025-07: I will teach a new course, [CS 395T: Database Systems and LLMs](https://ut-db-teaching.github.io/cs395t-fall25/), in Fall 2025.
