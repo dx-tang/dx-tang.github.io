@@ -23,6 +23,7 @@ Do not open the html files directly via `file://`.
 - `content/news.md`: news entries
 - `content/publications.md`: publication list
 - `content/projects.md`: projects page
+- `content/past-projects.md`: past projects page
 - `content/team.md`: students and team page
 - `content/services.md`: service page
 - `content/teaching.md`: teaching page
