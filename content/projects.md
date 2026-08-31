@@ -1,11 +1,10 @@
 ### Current Projects
 
-My research projects are mainly on data systems and involve collaborations with other professors at UTCS:
-
-- Efficient and Scalable Vector Databases
-- Scalable Unstructured Data Analysis by Large Language Models
-- Data Systems on CXL memory (with [Prof. Witchel](https://www.cs.utexas.edu/~witchel/) and [Prof. Chidambaram](https://www.cs.utexas.edu/~vijay/))
-- Formal Methods for Optimizing Data-Intensive User-Defined Programs (with [Prof. Dillig](https://www.cs.utexas.edu/~isil/))
+- Vector databases
+- Data agents for unstructured data analysis
+- Data systems for AI agents
+- Data systems on CXL memory 
+- Formal Methods for Optimizing Data-Intensive User-Defined Programs  
 
 ### Past Projects
 

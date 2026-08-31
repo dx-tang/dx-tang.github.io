@@ -1,4 +1,5 @@
-### University of Texas at Austin
+### The University of Texas at Austin
+- Instructor | [CS 395T: Advanced Database Systems](https://ut-db-teaching.github.io/cs395t-fall26/), Fall 2026
 - Instructor | CS 378: Database System Design, Spring 2026
 - Instructor | CS 395T: Database Systems and LLMs, Fall 2025
 - Instructor | CS 347: Data Management, Fall 2024

@@ -1,0 +1,2 @@
+- Distinguished Reviewer Award, SIGMOD 2025
+- Best of VLDB 2023

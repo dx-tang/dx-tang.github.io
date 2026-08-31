@@ -16,6 +16,8 @@ The CV PDF is generated from markdown files in [`content/`](./content).
 - `education.md`
 - `publications.md`
 - `services.md`
+- `honors-and-awards.md`
+- `team.md`
 - `teaching.md`
 - `industry.md`
 
@@ -24,7 +26,7 @@ The CV PDF is generated from markdown files in [`content/`](./content).
 Tabbed sections such as employment and education use bullets with pipe-delimited fields:
 
 ```md
-- 2024-present | Assistant Professor - University of Texas, Austin
+- 2024-present | Assistant Professor - The University of Texas at Austin
   Advisor: ...
 ```
 

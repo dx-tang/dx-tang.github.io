@@ -16,6 +16,8 @@ const sections = {
   education: renderTabbedSection(readMarkdown('education.md')),
   publications: renderPublications(readMarkdown('publications.md')),
   services: renderLabeledBlock(readMarkdown('services.md')),
+  honorsAndAwards: renderBulletList(readMarkdown('honors-and-awards.md')),
+  team: renderLabeledBlock(readMarkdown('team.md')),
   teaching: renderLabeledBlock(readMarkdown('teaching.md')),
   industry: renderIndustry(readMarkdown('industry.md')),
 };
@@ -26,6 +28,8 @@ const tex = template
   .replace('__EDUCATION__', sections.education)
   .replace('__PUBLICATIONS__', sections.publications)
   .replace('__SERVICES__', sections.services)
+  .replace('__HONORS_AND_AWARDS__', sections.honorsAndAwards)
+  .replace('__TEAM__', sections.team)
   .replace('__TEACHING__', sections.teaching)
   .replace('__INDUSTRY__', sections.industry);
 
@@ -103,6 +107,12 @@ function renderLabeledBlock(markdown) {
   });
 
   return lines.join('\n');
+}
+
+function renderBulletList(markdown) {
+  return parseBulletItems(markdown)
+    .map((item) => `  \\item ${renderInline(item.lines.join(' '))}`)
+    .join('\n');
 }
 
 function renderIndustry(markdown) {
