@@ -4,4 +4,4 @@ I earned my Ph.D. degree from the CS Department of UChicago, advised by [Prof. A
 
 I am passionate about building data systems for novel applications and hardware. My current research focuses on building data foundations for agentic AI. My research projects can be found on this [page](projects.html).
 
-**I am seeking self-motivated Ph.D. students. Please check out this [page](hiring.html) for PhD hiring information and feel free to reach out if you are interested.** For undergraduates or master's students who are interested in working with me, please fill in this [form](https://forms.gle/yATJ71eSCud91dot7).
+**I am seeking self-motivated Ph.D. students for Fall 2027. Please check out this [page](hiring.html) for PhD hiring information and feel free to reach out if you are interested.** For undergraduates or master's students who are interested in working with me, please fill in this [form](https://forms.gle/yATJ71eSCud91dot7).
