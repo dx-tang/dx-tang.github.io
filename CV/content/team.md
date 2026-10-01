@@ -1,7 +1,7 @@
 ### PhD Students
-- Abhinav Gyawali (co-advised with Vijay Chidambaram)
+- Abhinav Gyawali (co-advised with Prof. Chidambaram)
 - Hexu Li
-- Shurang Wu (co-advised with Vijay Chidambaram)
+- Shurang Wu (co-advised with Prof. Chidambaram)
 - Tianming Wu
 - Yibo Huang (co-advised with Prof. Witchel)
 - Ziteng Wang (co-advised with Prof. Dillig)
