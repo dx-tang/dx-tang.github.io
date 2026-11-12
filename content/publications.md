@@ -1,4 +1,4 @@
-- Rewinding the Fold: Making Stateful Computations Retractable
+- [Rewinding the Fold: Making Stateful Computations Retractable](#)
   Ziteng Wang, Linux Zheng, **Dixin Tang**, Isil Dillig
   **POPL 2027**
 
