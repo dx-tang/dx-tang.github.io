@@ -1,3 +1,5 @@
+- 2026-11: Our paper "Rewinding the Fold: Making Stateful Computations Retractable" is accepted by POPL'27.
+- 2026-11: I gave a talk, "AgentDS: A Practical Data System for AI Agents", at the [Joint LDOS and InfraAI Symposium](https://cvent.utexas.edu/event/28c02df2-fb65-4fd5-9ef5-2e338d10be08/summary).
 - 2026-04: Our paper "Optimal Predicate Pushdown Synthesis" is accepted by PLDI'26.
 - 2025-11: Check out [PathFinder](https://arxiv.org/pdf/2511.00995), a novel indexing framework that efficiently supports conjunctions and disjunctions for filtered ANNS.
 - 2025-08: Our paper "Homomorphism Calculus for User-Defined Aggregations" is accepted by OOPSLA'25.

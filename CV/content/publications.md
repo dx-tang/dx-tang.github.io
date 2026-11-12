@@ -1,3 +1,6 @@
+- Rewinding the Fold: Making Stateful Computations Retractable | Ziteng Wang, Linux Zheng, **Dixin Tang**, Isil Dillig
+  **POPL 2027**
+
 - Optimal Predicate Pushdown Synthesis | Robert Zhang, Eric Hayden Campbell, **Dixin Tang**, Isil Dillig
   **PLDI 2026**
 
