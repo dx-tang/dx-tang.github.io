@@ -1,11 +1,11 @@
 ### Program Committee
 
-- SIGMOD - 2022, 2023, 2025, 2026, 2027, 2028
-- VLDB - 2025, 2026, 2027
-- ICDE - 2025, 2026
+- SIGMOD - 2022-2023, 2025-2028
+- VLDB - 2025-2027
+- ICDE - 2025-2026
 - EDBT - 2024
-- HILDA - 2023, 2024
-- SIGMOD Demo Track - 2022, 2024, 2025
+- HILDA - 2023-2024
+- SIGMOD Demo Track - 2022, 2024-2025
 
 ### Conference Reviewer
 

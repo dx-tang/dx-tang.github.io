@@ -1,1 +1,1 @@
-Vector Databases, Data Agents, Data Systems for AI Agents
+Data systems for AI agents, Cloud-based data pipelines, Vector databases

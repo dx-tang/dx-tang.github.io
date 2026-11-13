@@ -1,3 +1,9 @@
+Past projects include:
+
+- Formal Methods for optimizing data-intensive user-defined programs
+
+### Ph.D. and postdoctoral research
+
 My research during my Ph.D. and postdoctoral work focused on supporting user-centered data analytics applications at scale by reshaping modern data analytics stacks. Major projects include:
 
 - [FormS](https://github.com/forms-org/forms): a Python library that efficiently translates spreadsheet formulas to SQL queries
