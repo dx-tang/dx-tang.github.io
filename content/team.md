@@ -9,4 +9,5 @@
 
 ### Undergraduate and Master’s Students 
 
+- Eric Peng
 - Yingfei Tang
